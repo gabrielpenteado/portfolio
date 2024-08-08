@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-item input {
+  margin-right: 4px;
+}
