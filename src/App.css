@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(250px, 1fr)
+    minmax(300px, 1fr)
   ); /* Responsive grid layout */
   gap: 24px; /* Space between cards */
   padding: 16px;
@@ -94,7 +94,7 @@
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 8px 12px;
   border-top: 1px solid #ddd; /* Add a border to separate buttons from content */
   background: #fff;
