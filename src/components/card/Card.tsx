@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faVideo } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faVideo, faInfo } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 interface TechStackItem {
@@ -26,8 +26,14 @@ const Card: React.FC<CardProps> = ({
   codeLink,
   videoLink,
 }) => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const toggleDetails = () => {
+    setShowDetails(!showDetails);
+  };
+
   return (
-    <div className="card">
+    <div className={`card ${showDetails ? "show-details" : ""}`}>
       <img src={image} alt={title} />
       <div className="card-details">
         <h2>{title}</h2>
@@ -42,16 +48,23 @@ const Card: React.FC<CardProps> = ({
       </div>
 
       <div className="buttons">
-        {codeLink && (
-          <Link to={codeLink} target="_blank" className="btn">
-            <FontAwesomeIcon icon={faCode} />
-          </Link>
-        )}
-        {videoLink && (
-          <Link to={videoLink} target="_blank" className="btn">
-            <FontAwesomeIcon icon={faVideo} />
-          </Link>
-        )}
+        <div className="info-button">
+          <button className="btn info-btn" onClick={toggleDetails}>
+            <FontAwesomeIcon icon={faInfo} />
+          </button>
+        </div>
+        <div className="code-video-btt">
+          {codeLink && (
+            <Link to={codeLink} target="_blank" className="btn">
+              <FontAwesomeIcon icon={faCode} />
+            </Link>
+          )}
+          {videoLink && (
+            <Link to={videoLink} target="_blank" className="btn">
+              <FontAwesomeIcon icon={faVideo} />
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );
