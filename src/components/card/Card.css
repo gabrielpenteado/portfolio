@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .card {
   background: white;
   border-radius: 8px;
@@ -10,6 +21,8 @@
   cursor: pointer;
   box-sizing: border-box;
   transition: transform 0.3s ease;
+  opacity: 0; /* Start with cards hidden */
+  animation: fadeInUp 0.5s ease forwards; /* Animate cards in */
 }
 
 .card img {
@@ -88,7 +101,7 @@
 .buttons {
   display: flex;
   justify-content: space-between;
-  padding: 8px 12px;
+  padding: 6px 6px;
   border-top: 1px solid #ddd;
   background: #fff;
   position: relative; /* Ensure buttons are always visible */
@@ -97,20 +110,18 @@
 }
 
 .btn {
-  background: transparent;
+  background: #dddddd;
   border: none;
-  color: #007bff;
+  /* color: #007bff; */
   font-size: 1.2rem; /* Larger icon size */
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #0056b3;
-  color: #bbb;
+  background: #b1b1b1;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 600px) {
   .card-details h2 {
     font-size: 1.2rem;

@@ -8,6 +8,8 @@ export interface CardData {
   title: string;
   description: string;
   techStack: TechStackItem[];
+  codeLink: string;
+  videoLink: string;
 }
 
 export const cards: CardData[] = [
@@ -25,6 +27,8 @@ export const cards: CardData[] = [
       { name: "Visual Studio Code" },
       { name: "GitHub" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -40,6 +44,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -55,6 +61,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -70,6 +78,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -85,6 +95,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -100,6 +112,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -115,6 +129,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -130,6 +146,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -145,6 +163,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -160,6 +180,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -175,6 +197,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -190,6 +214,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
     id: 2,
@@ -205,6 +231,8 @@ export const cards: CardData[] = [
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   // Adicione mais cards aqui
 ];

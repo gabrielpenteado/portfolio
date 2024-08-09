@@ -101,18 +101,14 @@
 }
 
 .btn {
-  background-color: #007bff;
+  /* background-color: #007bff; */
   border: none;
-  color: white;
-  padding: 8px 16px;
+  color: black;
+  padding: 6px 16px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 0.8rem;
-}
-
-.btn:hover {
-  background-color: #0056b3;
+  font-size: 1.1rem;
 }
 
 /* Media Queries for Responsiveness */

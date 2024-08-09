@@ -3,6 +3,7 @@ import "./Card.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faVideo } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 interface TechStackItem {
   name: string;
@@ -13,6 +14,8 @@ interface CardProps {
   title: string;
   description: string;
   techStack: TechStackItem[];
+  codeLink: string;
+  videoLink: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -20,6 +23,8 @@ const Card: React.FC<CardProps> = ({
   title,
   description,
   techStack,
+  codeLink,
+  videoLink,
 }) => {
   return (
     <div className="card">
@@ -37,12 +42,16 @@ const Card: React.FC<CardProps> = ({
       </div>
 
       <div className="buttons">
-        <button className="btn">
-          <FontAwesomeIcon icon={faCode} />
-        </button>
-        <button className="btn">
-          <FontAwesomeIcon icon={faVideo} />
-        </button>
+        {codeLink && (
+          <Link to={codeLink} target="_blank" className="btn">
+            <FontAwesomeIcon icon={faCode} />
+          </Link>
+        )}
+        {videoLink && (
+          <Link to={videoLink} target="_blank" className="btn">
+            <FontAwesomeIcon icon={faVideo} />
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -43,6 +43,8 @@ const App: React.FC = () => {
             title={card.title}
             description={card.description}
             techStack={card.techStack}
+            codeLink={card.codeLink}
+            videoLink={card.videoLink}
           />
         ))}
       </div>
