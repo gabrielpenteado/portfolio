@@ -1,17 +1,72 @@
+/* Estilo padrão da Navbar */
 .navbar {
-  display: flex;
-  gap: 16px;
   padding: 16px;
   background: #f4f4f4;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 
-.navbar-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
+/* Esconder os inputs radio, mas manter a acessibilidade */
 .navbar-item input {
-  margin-right: 4px;
+  display: none;
+}
+
+/* Navbar Menu - Estilo padrão para desktops */
+.navbar-menu {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-menu.desktop {
+  display: flex;
+}
+
+.navbar-menu.mobile {
+  display: none;
+}
+
+/* Ícone de Hambúrguer */
+.hamburger-icon {
+  display: none; /* Escondido por padrão */
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Responsividade - Menus para telas menores */
+@media (max-width: 600px) {
+  .navbar-menu.desktop {
+    display: none; /* Esconder a Navbar tradicional em telas menores */
+  }
+
+  .hamburger-icon {
+    display: block; /* Mostrar o ícone em telas menores */
+  }
+
+  .navbar-menu.mobile {
+    display: none; /* Esconder o menu inicialmente */
+    flex-direction: column;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    background: #f4f4f4;
+    border-top: 1px solid #ddd;
+    padding: 8px 0;
+    z-index: 1000; /* Garantir que o menu fique acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionar sombra ao menu para destaque */
+    transition: transform 0.3s ease; /* Adicionar transição suave */
+    transform: translateY(-100%); /* Menu começa fora da tela */
+  }
+
+  .navbar-menu.mobile.open {
+    display: flex; /* Mostrar o menu quando estiver aberto */
+    transform: translateY(0); /* Menu desliza para baixo quando aberto */
+  }
+
+  .navbar-item {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
 }
