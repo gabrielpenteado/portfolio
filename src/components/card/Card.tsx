@@ -15,7 +15,7 @@ interface CardProps {
   description: string;
   techStack: TechStackItem[];
   codeLink: string;
-  videoLink: string;
+  videoLink?: string;
 }
 
 const Card: React.FC<CardProps> = ({

@@ -23,7 +23,7 @@
 
 .card img {
   width: 100%;
-  height: auto;
+  height: 90%;
   position: absolute; /* Position absolutely to overlay content */
   top: 0;
   left: 0;
@@ -130,6 +130,6 @@
   }
 
   .buttons .btn {
-    font-size: 0.7rem; /* Adjust font size for buttons on smaller screens */
+    font-size: 0.9rem; /* Adjust font size for buttons on smaller screens */
   }
 }
