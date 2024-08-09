@@ -9,153 +9,95 @@
   }
 }
 
-.card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: transform 0.3s ease;
-  opacity: 0; /* Start with cards hidden */
-  animation: fadeInUp 0.5s ease forwards; /* Animate cards in */
-}
-
 /* Adiciona um efeito de sombra suave no hover */
 .card:hover {
   transform: translateY(-10px); /* Move o card ligeiramente para cima */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Aumenta a sombra */
 }
 
-.card img {
-  width: 100%;
-  height: 90%;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
+/* From Uiverse.io by D3OXY */
+.card {
+  position: relative;
+  width: 350px;
+  aspect-ratio: 16/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  /* box-shadow: 0 0 0 5px #ffffff80; */
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.5s ease forwards; /* Animate cards in */
 }
 
-.card-details {
-  padding: 16px;
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 20px;
   box-sizing: border-box;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0; /* Hide details by default */
-  transition: opacity 0.3s ease; /* Smooth transition for opacity */
-  z-index: 1; /* Ensure details are on top of the image */
-  text-align: center;
-  pointer-events: none; /* Prevent interaction with .card-details while hidden */
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card-details h2 {
-  margin: 0 0 12px 0;
-  font-size: 1.4rem;
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 20px;
   color: #333;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.card-details .tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 12px 0;
-  justify-content: center;
+.card:hover svg {
+  scale: 0;
 }
 
-.card-details .tech-stack-item {
-  background-color: #e0e0e0; /* Light gray background */
-  border: 1px solid #bbb; /* Slightly darker border */
-  border-radius: 4px;
-  padding: 4px 6px; /* Add padding for better spacing */
-  font-size: 0.8rem;
-  font-family: "Roboto", sans-serif; /* Change font family */
-  color: #333; /* Dark text color */
+.card__description {
+  margin: 10px 0 10px;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
 }
 
-.card-details p {
-  margin: 12px 0 0 0;
-  font-size: 0.95rem;
-}
-
-.card:hover .card-details {
-  opacity: 1; /* Show details on hover */
-}
-
-.card:hover img {
-  opacity: 0.3; /* Dim the image on hover */
-}
-
-.content {
-  padding: 16px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  flex: 1; /* Allow content to expand and fill available space */
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 6px;
-  border-top: 1px solid #ddd;
-  background: #fff;
-  position: relative; /* Ensure buttons are always visible */
-  z-index: 2; /* Ensure buttons are on top */
-  gap: 4px;
-}
-
-.btn {
-  background: #dddddd;
+.card__button {
+  padding: 15px;
+  border-radius: 8px;
+  background: #777;
   border: none;
-  /* color: #007bff; */
-  font-size: 1.2rem; /* Larger icon size */
+  color: white;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
 
-.code-video-btt {
-  display: flex;
-  gap: 8px;
-}
-
-.btn:hover {
-  background: #b1b1b1;
-}
-
-@media (max-width: 600px) {
-  .card-details h2 {
-    font-size: 1.2rem;
-  }
-
-  .card-details p {
-    font-size: 0.85rem;
-  }
-
-  .card-details .tech-stack-item {
-    font-size: 0.8rem;
-  }
-
-  .buttons .btn {
-    font-size: 0.7rem;
-  }
-
-  .card-details {
-    display: none; /* Esconde os detalhes inicialmente */
-  }
-
-  .card.show-details .card-details {
-    display: flex; /* Mostra os detalhes quando o botão "info" é clicado */
-  }
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
+  margin-left: 8px;
+  cursor: pointer;
 }

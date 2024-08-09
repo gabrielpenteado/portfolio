@@ -14,18 +14,11 @@ const Navbar: React.FC<NavbarProps> = ({
   onTechChange,
   techOptions,
 }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <nav className="navbar">
-      {/* Navbar tradicional para telas maiores */}
-      <div className="navbar-menu desktop">
+      <div className="navbar-menu desktop radio-inputs">
         {techOptions.map((tech, index) => (
-          <label key={index} className="navbar-item">
+          <label key={index} className="navbar-item radio">
             <input
               type="radio"
               name="tech-stack"
@@ -33,31 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({
               checked={selectedTech === tech}
               onChange={() => onTechChange(tech)}
             />
-            {tech}
-          </label>
-        ))}
-      </div>
-
-      {/* Ícone de Hambúrguer para telas menores */}
-      <div className="hamburger-icon mobile" onClick={toggleMenu}>
-        <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} />
-      </div>
-
-      {/* Menu para telas menores */}
-      <div className={`navbar-menu mobile ${menuOpen ? "open" : ""}`}>
-        {techOptions.map((tech, index) => (
-          <label key={index} className="navbar-item">
-            <input
-              type="radio"
-              name="tech-stack"
-              value={tech}
-              checked={selectedTech === tech}
-              onChange={() => {
-                onTechChange(tech);
-                toggleMenu(); // Fechar o menu após seleção
-              }}
-            />
-            {tech}
+            <span className="name">{tech}</span>
           </label>
         ))}
       </div>
