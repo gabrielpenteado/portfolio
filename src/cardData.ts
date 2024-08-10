@@ -37,13 +37,7 @@ export const cards: CardData[] = [
     title: "Título do Card 2",
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
-    techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
-    ],
+    techStack: [{ name: "Certificates" }],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
   },
