@@ -11,6 +11,7 @@ interface CardProps {
   techStack?: TechStackItem[];
   codeLink?: string;
   videoLink?: string;
+  certificateLink?: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -20,6 +21,7 @@ const Card: React.FC<CardProps> = ({
   techStack,
   codeLink,
   videoLink,
+  certificateLink,
 }) => {
   return (
     <div className="card">
@@ -32,12 +34,20 @@ const Card: React.FC<CardProps> = ({
             techStack.map((tech, index) => <div key={index}>{tech.name}</div>)}
         </div>
         <div className="buttons">
-          <a href={videoLink} target="_blank">
-            <button className="card__button">Video</button>
-          </a>
-          <a href={codeLink} target="_blank">
-            <button className="card__button secondary">Source Code</button>
-          </a>
+          {techStack?.some((tech) => tech.name === "Certificates") ? (
+            <a href={certificateLink} target="_blank">
+              <button className="card__button">Certificate</button>
+            </a>
+          ) : (
+            <div>
+              <a href={videoLink} target="_blank">
+                <button className="card__button">Video</button>
+              </a>
+              <a href={codeLink} target="_blank">
+                <button className="card__button secondary">Source Code</button>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>

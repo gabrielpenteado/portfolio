@@ -7,9 +7,10 @@ export interface CardData {
   image: string;
   title: string;
   description: string;
-  techStack: TechStackItem[];
-  codeLink: string;
-  videoLink: string;
+  techStack?: TechStackItem[];
+  codeLink?: string;
+  videoLink?: string;
+  certificateLink?: string;
 }
 
 export const cards: CardData[] = [
@@ -38,8 +39,7 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [{ name: "Certificates" }],
-    codeLink: "https://google.com",
-    videoLink: "https://google.com",
+    certificateLink: "https://facebook.com",
   },
   {
     id: 2,

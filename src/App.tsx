@@ -26,7 +26,7 @@ const App: React.FC = () => {
     selectedTech === "All"
       ? cards
       : cards.filter((card) =>
-          card.techStack.some((tech) => tech.name === selectedTech)
+          card.techStack!.some((tech) => tech.name === selectedTech)
         );
 
   return (
@@ -46,6 +46,7 @@ const App: React.FC = () => {
             techStack={card.techStack}
             codeLink={card.codeLink}
             videoLink={card.videoLink}
+            certificateLink={card.certificateLink}
           />
         ))}
       </div>
