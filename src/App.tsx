@@ -11,6 +11,7 @@ const techOptions: string[] = [
   "TypeScript",
   "React",
   "Node.js",
+  "Certificates",
 ];
 
 const App: React.FC = () => {
