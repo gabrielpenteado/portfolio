@@ -37,13 +37,14 @@ const Card: React.FC<CardProps> = ({
             <div key={index}>{tech.name}</div>
           ))}
         </div>
-
-        <a href={videoLink}>
-          <button className="card__button">Video</button>
-        </a>
-        <a href={codeLink}>
-          <button className="card__button secondary">Source Code</button>
-        </a>
+        <div className="buttons">
+          <a href={videoLink} target="_blank">
+            <button className="card__button">Video</button>
+          </a>
+          <a href={codeLink} target="_blank">
+            <button className="card__button secondary">Source Code</button>
+          </a>
+        </div>
       </div>
     </div>
   );
