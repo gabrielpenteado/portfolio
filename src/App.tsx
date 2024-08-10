@@ -3,6 +3,7 @@ import Card from ".//components/card/Card";
 import Navbar from "./components/navbar/Navbar";
 import { cards } from "./cardData";
 import "./App.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Define os tipos para as opções de tech stack
 const techOptions: string[] = [
@@ -35,19 +36,30 @@ const App: React.FC = () => {
         onTechChange={handleTechChange}
         techOptions={techOptions}
       />
-      <div className="container">
-        {filteredCards.map((card, index) => (
-          <Card
-            key={index}
-            image={card.image}
-            title={card.title}
-            description={card.description}
-            techStack={card.techStack}
-            codeLink={card.codeLink}
-            videoLink={card.videoLink}
-          />
-        ))}
-      </div>
+      <AnimatePresence>
+        <div className="container">
+          {filteredCards.map((card) => (
+            <motion.div
+              layout
+              key={card.id}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card
+                key={card.id}
+                image={card.image}
+                title={card.title}
+                description={card.description}
+                techStack={card.techStack}
+                codeLink={card.codeLink}
+                videoLink={card.videoLink}
+              />
+            </motion.div>
+          ))}
+        </div>
+      </AnimatePresence>
     </div>
   );
 };

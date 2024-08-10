@@ -1,16 +1,4 @@
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .card {
-  background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -21,8 +9,6 @@
   cursor: pointer;
   box-sizing: border-box;
   transition: transform 0.3s ease;
-  opacity: 0; /* Start with cards hidden */
-  animation: fadeInUp 0.5s ease forwards; /* Animate cards in */
 }
 
 .card img {
@@ -43,7 +29,6 @@
   background: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   opacity: 0; /* Hide details by default */
   transition: opacity 0.3s ease; /* Smooth transition for opacity */
@@ -54,7 +39,7 @@
 
 .card-details h2 {
   margin: 0 0 12px 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #333;
   font-weight: bold;
 }
@@ -63,7 +48,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 12px 0;
+  /* margin: 12px 0; */
   justify-content: center;
 }
 
@@ -71,7 +56,7 @@
   background-color: #e0e0e0; /* Light gray background */
   border: 1px solid #bbb; /* Slightly darker border */
   border-radius: 4px;
-  padding: 4px 6px; /* Add padding for better spacing */
+  padding: 3px 6px; /* Add padding for better spacing */
   font-size: 0.8rem;
   font-family: "Roboto", sans-serif; /* Change font family */
   color: #333; /* Dark text color */
@@ -100,26 +85,30 @@
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 8px;
   padding: 6px 6px;
   border-top: 1px solid #ddd;
-  background: #fff;
+  background: #e2e2e2;
   position: relative; /* Ensure buttons are always visible */
   z-index: 2; /* Ensure buttons are on top */
-  gap: 4px;
+  gap: 8px;
 }
 
 .btn {
-  background: #dddddd;
+  background: #afafaf;
+  padding: 4px 6px;
   border: none;
-  /* color: #007bff; */
-  font-size: 1.2rem; /* Larger icon size */
+  color: #333;
+  font-size: 1.1rem; /* Larger icon size */
   cursor: pointer;
   transition: color 0.3s ease;
+  justify-self: center;
+  border-radius: 6px;
 }
 
 .btn:hover {
-  background: #b1b1b1;
+  background: #949494;
 }
 
 @media (max-width: 600px) {
