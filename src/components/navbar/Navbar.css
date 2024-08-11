@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   border-radius: 0.5rem;
-  background-color: #a0a0a0a8;
+  background-color: #bdbdbda8;
   box-sizing: border-box;
   font-size: 1.1rem;
   width: 100%;
@@ -39,7 +39,7 @@
   color: #fff;
 }
 .radio-inputs .radio input:checked + .name:hover {
-  color: #1d1d29;
+  color: #414141;
 }
 
 .radio-inputs .radio input:checked + .name::after,
@@ -48,7 +48,6 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  /* background-color: #70c489; */
   bottom: 0;
 }
 
