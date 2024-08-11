@@ -7,3 +7,7 @@
   gap: 24px; /* Space between cards */
   padding: 16px;
 }
+
+body {
+  background-color: rgb(238, 238, 238);
+}

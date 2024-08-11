@@ -7,10 +7,9 @@ export interface CardData {
   image: string;
   title: string;
   description: string;
-  techStack?: TechStackItem[];
-  codeLink?: string;
-  videoLink?: string;
-  certificateLink?: string;
+  techStack: TechStackItem[];
+  codeLink: string;
+  videoLink: string;
 }
 
 export const cards: CardData[] = [
@@ -38,11 +37,18 @@ export const cards: CardData[] = [
     title: "Título do Card 2",
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
-    techStack: [{ name: "Certificates" }],
-    certificateLink: "https://facebook.com",
+    techStack: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+      { name: "Sass" },
+      { name: "WebStorm" },
+      { name: "GitLab" },
+    ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 3,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -59,7 +65,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 4,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -76,7 +82,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 5,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -93,7 +99,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 6,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -110,7 +116,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 7,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -127,7 +133,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 8,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -144,7 +150,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 9,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -154,6 +160,23 @@ export const cards: CardData[] = [
       { name: "JavaScript" },
       { name: "HTML" },
       { name: "Sass" },
+      { name: "WebStorm" },
+      { name: "TypeScript" },
+    ],
+    codeLink: "https://google.com",
+    videoLink: "https://google.com",
+  },
+  {
+    id: 10,
+    image:
+      "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Título do Card 2",
+    description:
+      "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
+    techStack: [
+      { name: "JavaScript" },
+      { name: "React" },
+      { name: "TypeScript" },
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
@@ -161,7 +184,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 11,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -170,7 +193,7 @@ export const cards: CardData[] = [
     techStack: [
       { name: "JavaScript" },
       { name: "HTML" },
-      { name: "Sass" },
+      { name: "React" },
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
@@ -178,7 +201,7 @@ export const cards: CardData[] = [
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 12,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -188,14 +211,14 @@ export const cards: CardData[] = [
       { name: "JavaScript" },
       { name: "HTML" },
       { name: "Sass" },
-      { name: "WebStorm" },
+      { name: "Node.js" },
       { name: "GitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
   },
   {
-    id: 2,
+    id: 13,
     image:
       "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Título do Card 2",
@@ -204,26 +227,9 @@ export const cards: CardData[] = [
     techStack: [
       { name: "JavaScript" },
       { name: "HTML" },
-      { name: "Sass" },
+      { name: "TypeScirpt" },
       { name: "WebStorm" },
-      { name: "GitLab" },
-    ],
-    codeLink: "https://google.com",
-    videoLink: "https://google.com",
-  },
-  {
-    id: 2,
-    image:
-      "https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Título do Card 2",
-    description:
-      "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
-    techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "React" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
