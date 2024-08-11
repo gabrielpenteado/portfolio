@@ -48,23 +48,16 @@ const Card: React.FC<CardProps> = ({
       </div>
 
       <div className="buttons">
-        <div className="info-button">
-          <button className="btn info-btn" onClick={toggleDetails}>
-            <FontAwesomeIcon icon={faInfo} />
-          </button>
-        </div>
-        <div className="code-video-btt">
-          {codeLink && (
-            <Link to={codeLink} target="_blank" className="btn">
-              <FontAwesomeIcon icon={faCode} />
-            </Link>
-          )}
-          {videoLink && (
-            <Link to={videoLink} target="_blank" className="btn">
-              <FontAwesomeIcon icon={faVideo} />
-            </Link>
-          )}
-        </div>
+        {codeLink && (
+          <Link to={codeLink} target="_blank" className="btn">
+            <FontAwesomeIcon icon={faCode} />
+          </Link>
+        )}
+        {videoLink && (
+          <Link to={videoLink} target="_blank" className="btn">
+            <FontAwesomeIcon icon={faVideo} />
+          </Link>
+        )}
       </div>
     </div>
   );
