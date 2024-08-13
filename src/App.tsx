@@ -8,15 +8,16 @@ import { motion, AnimatePresence } from "framer-motion";
 
 // Define os tipos para as opções de tech stack
 const techOptions: string[] = [
-  "All",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Node.js",
+  "all",
+  "javaScript",
+  "typeScript",
+  "react",
+  "vue",
+  "angular",
 ];
 
 const App: React.FC = () => {
-  const [selectedTech, setSelectedTech] = useState<string>("All");
+  const [selectedTech, setSelectedTech] = useState<string>("all");
 
   const handleTechChange = (tech: string) => {
     setSelectedTech(tech);
@@ -24,7 +25,7 @@ const App: React.FC = () => {
 
   // Filtra os cards com base na tech stack selecionada
   const filteredCards =
-    selectedTech === "All"
+    selectedTech === "all"
       ? cards
       : cards.filter((card) =>
           card.techStack!.some((tech) => tech.name === selectedTech)
