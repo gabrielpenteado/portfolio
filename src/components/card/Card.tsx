@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./Card.scss";
 // import github from "../../assets/github-brands-solid.svg";
 // import play from "../../assets/play-solid.svg";
 
