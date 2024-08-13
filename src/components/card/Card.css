@@ -1,116 +1,202 @@
 .card {
-  position: relative;
-  width: 350px;
-  height: 200px;
-  background: linear-gradient(-45deg, #161616 0%, #000000 100%);
-  color: #81818144;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  background-color: rgba(36, 36, 36, 0.05);
+  padding: 10px 32px 14px 32px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 14px;
-  /* gap: 10px; */
-  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.8;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.card-techs {
+  display: flex;
+  gap: 6px;
+  color: var(--color3, white);
+  padding-top: 8px;
+}
+
+.card-buttons {
+  position: absolute;
+  bottom: 16px;
+  left: 92px;
+  display: flex;
+  gap: 32px;
+  opacity: 0;
+  transition: left 0.3s ease, opacity 0.3s ease;
 }
 
 .card::before {
   content: "";
   position: absolute;
-  inset: 0;
   left: 0;
-  margin: auto;
-  width: 374px;
-  height: 230px;
-  border-radius: 10px;
-  background: linear-gradient(
-    -45deg,
-    var(--background1, rgb(231, 231, 231)) 0%,
-    var(--background2, white) 40%
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color1, white),
+    var(--color2, rgb(224, 224, 224))
   );
-  z-index: -10;
-  pointer-events: none;
-  transition: all 0.8s cubic-bezier(0.175, 0.95, 0.9, 1.275);
-  box-shadow: 0px 20px 30px hsla(0, 0%, 0%, 0.521);
-}
-
-.card::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  width: 300px;
-  height: 200px;
-  background: linear-gradient(
-    -45deg,
-    var(--background3, white) 0%,
-    var(--background4, rgb(214, 214, 214)) 100%
-  );
-  transform: translate3d(0, 0, 0) scale(0.45);
-}
-
-.card-body {
-  font-size: 16px;
-  text-transform: capitalize;
-  font-weight: 500;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  color: #bebfc5;
-}
-
-.card-buttons {
-  font-size: 18px;
-  display: flex;
-  justify-content: end;
-  gap: 6px;
-}
-
-button {
-  color: var(--button-color, #bebfc5);
-  font-weight: 400;
-  background-color: transparent;
-  border: 1px var(--button-border-color, #bebfc5) solid;
-  padding: 4px 6px;
-  cursor: pointer;
-}
-
-.card:hover::after {
-  transition: all 0.2s cubic-bezier(0.175, 0.285, 0.82, 1.275);
+  border-radius: 8px 0 0 8px;
+  transition: width 0.3s ease;
 }
 
 .card:hover::before {
-  transform: scaleX(1.02) scaleY(1.02);
-  box-shadow: 0px 0px 30px 0px var(--background5, rgb(151, 151, 151));
+  width: 10px;
+}
+
+.card:hover {
+  border-left-width: 10px;
+}
+
+.card-title,
+.card-description {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-title,
+.card:hover .car-description {
+  transform: translateX(20px);
+}
+
+.card:hover .card-buttons {
+  left: 120px;
+  opacity: 0.7;
+}
+
+.button-video {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+.button-code {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+.button-video:hover {
+  background-color: #242424;
+}
+
+.button-code:hover {
+  background-color: #242424;
+}
+
+/* .github {
+  width: 16px;
+}
+
+.video {
+  width: 15px;
+} */
+
+.gradient {
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 50%;
+  filter: blur(200px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .gradient {
+  opacity: 0.04;
 }
 
 /* Classe condicional para React */
 .react-class {
-  --background1: #0880d6;
-  --background2: #61dafb;
-  --background3: #0f12c2;
-  --background4: #0880d6;
-  --background5: #0f12c2;
-  --button-color: #0880d6;
-  --button-border-color: #0880d6;
+  --color1: #0880d6;
+  --color2: #61dafb;
 }
 
 /* Classe condicional para Vue */
 .vue-class {
-  --background1: #25a505;
-  --background2: #008800;
-  --background3: #00cc00;
-  --background4: #018d13;
-  --background5: #006d49;
-  --button-color: #018d13;
-  --button-border-color: #018d13;
+  --color1: #25a505;
+  --color2: #008800;
 }
 
 /* Classe condicional para Angular */
 .angular-class {
-  --background1: #c20000;
-  --background2: #f70303;
-  --background3: #d30000;
-  --background4: #f00000;
-  --background5: #8d0000;
-  --button-color: #f00000;
-  --button-border-color: #f00000;
+  --color1: #c20000;
+  --color2: #f70303;
+}
+
+@media (max-width: 600px) {
+  .card {
+    transform: none;
+    overflow: visible;
+    transition: none;
+  }
+
+  .card-buttons {
+    /* position: absolute; */
+    bottom: 16px;
+    left: 75px;
+    display: flex;
+    gap: 32px;
+    opacity: 1;
+  }
+
+  .button-video {
+    font-size: 13px;
+  }
+
+  .button-code {
+    font-size: 13px;
+  }
+
+  .card-techs {
+    display: flex;
+    gap: 6px;
+    color: var(--color3, white);
+    padding-top: 8px;
+    font-size: 14px;
+  }
+
+  .card-description {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.8;
+    line-height: 1.4;
+    font-weight: 300;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
 }

@@ -1,4 +1,6 @@
 import "./Card.css";
+// import github from "../../assets/github-brands-solid.svg";
+// import play from "../../assets/play-solid.svg";
 
 interface TechStackItem {
   name: string;
@@ -37,21 +39,28 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div className={`card ${getBorderClass(techStack)}`}>
+      <div className="gradient"></div>
       <h2 className="card-title">{title}</h2>
 
-      <div className="card-body">
+      <p className="card-description">{description}</p>
+
+      <div className="card-techs">
         {techStack &&
           techStack.map((tech, index) => <div key={index}>{tech.name}</div>)}
       </div>
 
-      <p>{description}</p>
-
       <div className="card-buttons">
-        <a href={videoLink} target="_blank">
-          <button className="button-video">Video</button>
-        </a>
         <a href={codeLink} target="_blank">
-          <button className="button-code">Code</button>
+          <button className="button-code">
+            {/* <img className="github" src={github} alt="github" /> */}
+            Source Code
+          </button>
+        </a>
+        <a href={videoLink} target="_blank">
+          <button className="button-video">
+            {/* <img className="video" src={play} alt="video" /> */}
+            Video
+          </button>
         </a>
       </div>
     </div>
