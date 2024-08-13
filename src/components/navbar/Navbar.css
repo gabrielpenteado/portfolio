@@ -2,10 +2,40 @@
   display: flex;
   flex-direction: row;
   width: fit-content;
+  height: 40px;
   background-color: #0d1117;
   justify-content: center;
+  align-items: center;
   border-radius: 5px;
   gap: 7.5px;
+  padding: 3px;
+}
+
+.span {
+  font-size: 18px;
+}
+
+.value-color:checked + .radio-button__custom {
+  background-color: var(--color, white);
+  border-color: transparent;
+  /* transform: scale(0.9); */
+  /* box-shadow: 0 0 20px #4c8bf580; */
+}
+
+.value:hover .radio-button__custom {
+  /* transform: scale(1.1); */
+  border-color: var(--color, white);
+  box-shadow: inset 0 0 20px var(--color, white);
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 18.5px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #0f0f0f;
 }
 
 .value {
@@ -39,7 +69,7 @@ span {
 .value-color::before {
   content: "";
   position: absolute;
-  top: 36px;
+  top: 43px;
   right: 0px;
   width: 100%;
   height: 3px;

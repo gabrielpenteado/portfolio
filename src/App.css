@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap");
+
 .container {
   display: grid;
   grid-template-columns: repeat(
@@ -5,10 +7,29 @@
     minmax(350px, 1fr)
   ); /* Responsive grid layout */
   gap: 40px; /* Space between cards */
-  padding: 30px 40px 40px 40px;
+  /* padding: 30px 40px 40px 40px; */
 }
 
 body {
-  background-color: #333333;
+  background-color: #444444;
   font-family: Roboto;
+}
+
+.app {
+  padding: 10px 60px 30px 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Prompt", sans-serif;
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+  background-color: rgb(56, 56, 56);
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
 }

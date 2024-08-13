@@ -23,6 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({
             checked={selectedTech === tech}
             onChange={() => onTechChange(tech)}
           />
+          <span className="radio-button__custom"></span>
           <div className="btn">
             <span className="span">{tech}</span>
           </div>

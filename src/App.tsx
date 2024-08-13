@@ -3,6 +3,7 @@ import Card from ".//components/card/Card";
 import Navbar from "./components/navbar/Navbar";
 import { cards } from "./cardData";
 import "./App.css";
+import "./canvas.js";
 
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -33,11 +34,16 @@ const App: React.FC = () => {
 
   return (
     <div className="app">
-      <Navbar
-        selectedTech={selectedTech}
-        onTechChange={handleTechChange}
-        techOptions={techOptions}
-      />
+      <div className="header">
+        <div className="profile">
+          <p>foto</p>
+        </div>
+        <Navbar
+          selectedTech={selectedTech}
+          onTechChange={handleTechChange}
+          techOptions={techOptions}
+        />
+      </div>
       <AnimatePresence>
         <div className="container">
           {filteredCards.map((card) => (
