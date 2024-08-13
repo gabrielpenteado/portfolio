@@ -1,63 +1,72 @@
-.navbar {
-  width: 100%;
-}
-.radio-inputs {
+.wrapper {
+  --font-color-dark: #bebfc5;
+  --font-color-light: #bebfc5;
+  --bg-color: #212121;
+  --main-color: #0c0c0c;
+  --secondary-color: #141414;
   position: relative;
-  display: flex;
-  border-radius: 0.5rem;
-  background-color: #bdbdbda8;
-  box-sizing: border-box;
-  font-size: 1.1rem;
   width: 100%;
-  padding: 1rem 1rem 0 1rem;
-  justify-content: center;
-  margin-bottom: 6px;
-}
-
-.radio-inputs .radio input {
-  display: none;
-}
-
-.radio-inputs .radio .name {
+  height: 36px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 34px;
   display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  border: none;
-  padding: 0.5rem 0.8rem;
-  /* transition: all 0.15s ease-in-out; */
+  flex-direction: row;
+  box-shadow: 4px 4px var(--main-color);
+}
+
+.option {
+  margin-right: 5px;
+  width: 100%;
+  height: 28px;
   position: relative;
+  top: 2px;
+  left: 2px;
+  border-radius: 34px;
+  transition: 0.25s cubic-bezier(0, 0, 0, 1);
 }
 
-.radio-inputs .radio input:checked + .name {
-  background-color: rgb(238, 238, 238);
-  font-weight: 600;
-}
-.radio-inputs .radio input + .name:hover {
-  color: #fff;
-}
-.radio-inputs .radio input:checked + .name:hover {
-  color: #414141;
+.option:last-child {
+  margin-right: 4px;
 }
 
-.radio-inputs .radio input:checked + .name::after,
-.radio-inputs .radio input:checked + .name::before {
-  content: "";
+.option:hover {
+  background-color: var(--secondary-color);
+}
+
+.option:hover .span {
+  color: var(--font-color-light);
+}
+
+.input {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  bottom: 0;
+  left: 0;
+  top: 0;
+  appearance: none;
+  cursor: pointer;
 }
 
-.radio-inputs .radio input:checked + .name::after {
-  right: -10px;
-  border-bottom-left-radius: 300px;
-  box-shadow: -3px 3px 0px 3px rgb(238, 238, 238);
+.btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.radio-inputs .radio input:checked + .name::before {
-  left: -10px;
-  border-bottom-right-radius: 300px;
-  box-shadow: 3px 3px 0px 3px rgb(238, 238, 238);
+
+.span {
+  color: var(--font-color-dark);
+}
+
+.input:checked + .btn {
+  background-color: var(--main-color);
+  transition: 0.2s cubic-bezier(0, 0, 0, 1);
+}
+
+.input:checked + .btn .span {
+  color: var(--font-color-light);
+  transition: 0.25s cubic-bezier(0, 0, 0, 1);
 }

@@ -4,11 +4,11 @@
     auto-fill,
     minmax(350px, 1fr)
   ); /* Responsive grid layout */
-  gap: 24px; /* Space between cards */
-  padding: 16px;
+  gap: 44px; /* Space between cards */
+  padding: 24px;
 }
 
 body {
-  background-color: rgb(238, 238, 238);
+  background-color: #212121;
   font-family: Roboto;
 }

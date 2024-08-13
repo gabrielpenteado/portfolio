@@ -160,7 +160,7 @@ export const cards: CardData[] = [
       { name: "JavaScript" },
       { name: "HTML" },
       { name: "Sass" },
-      { name: "WebStorm" },
+      { name: "vue" },
       { name: "TypeScript" },
     ],
     codeLink: "https://google.com",
@@ -175,7 +175,7 @@ export const cards: CardData[] = [
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
       { name: "JavaScript" },
-      { name: "React" },
+      { name: "react" },
       { name: "TypeScript" },
       { name: "WebStorm" },
       { name: "GitLab" },
@@ -193,7 +193,7 @@ export const cards: CardData[] = [
     techStack: [
       { name: "JavaScript" },
       { name: "HTML" },
-      { name: "React" },
+      { name: "react" },
       { name: "WebStorm" },
       { name: "GitLab" },
     ],
@@ -210,7 +210,7 @@ export const cards: CardData[] = [
     techStack: [
       { name: "JavaScript" },
       { name: "HTML" },
-      { name: "Sass" },
+      { name: "angular" },
       { name: "Node.js" },
       { name: "GitLab" },
     ],
@@ -227,7 +227,7 @@ export const cards: CardData[] = [
     techStack: [
       { name: "JavaScript" },
       { name: "HTML" },
-      { name: "TypeScirpt" },
+      { name: "TypeScript" },
       { name: "WebStorm" },
       { name: "React" },
     ],

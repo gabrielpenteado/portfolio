@@ -12,18 +12,21 @@ const Navbar: React.FC<NavbarProps> = ({
   techOptions,
 }) => {
   return (
-    <nav className="navbar">
-      <div className="navbar-menu desktop radio-inputs">
+    <nav>
+      <div className="wrapper">
         {techOptions.map((tech, index) => (
-          <label key={index} className="navbar-item radio">
+          <label key={index} className="option">
             <input
+              className="input"
               type="radio"
-              name="tech-stack"
+              name="btn"
               value={tech}
               checked={selectedTech === tech}
               onChange={() => onTechChange(tech)}
             />
-            <span className="name">{tech}</span>
+            <div className="btn">
+              <span className="span">{tech}</span>
+            </div>
           </label>
         ))}
       </div>
