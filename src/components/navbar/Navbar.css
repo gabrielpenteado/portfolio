@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap");
+
 .input {
   display: flex;
   flex-direction: row;
   width: fit-content;
   height: 40px;
-  background-color: #0d1117;
+  /* background-color: #0d1117; */
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  align-self: self-end;
   border-radius: 5px;
   gap: 7.5px;
   padding: 3px;
@@ -13,6 +16,8 @@
 
 .span {
   font-size: 18px;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
 }
 
 .value-color:checked + .radio-button__custom {
@@ -25,17 +30,17 @@
 .value:hover .radio-button__custom {
   /* transform: scale(1.1); */
   border-color: var(--color, white);
-  box-shadow: inset 0 0 20px var(--color, white);
+  box-shadow: inset 0 0 40px var(--color, white);
 }
 
 .radio-button__custom {
   position: absolute;
-  top: 18.5px;
-  left: 14px;
+  top: 15px;
+  left: 15px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 1px solid #0f0f0f;
+  border: 1px solid rgb(56, 56, 56);
 }
 
 .value {
@@ -49,10 +54,6 @@
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.2s ease;
-}
-
-span {
-  text-transform: capitalize;
 }
 
 .value:not(:active):hover,
@@ -69,10 +70,10 @@ span {
 .value-color::before {
   content: "";
   position: absolute;
-  top: 43px;
+  top: 39px;
   right: 0px;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: var(--color, white);
   border-radius: 5px;
   opacity: 0;

@@ -3,7 +3,6 @@ import Card from ".//components/card/Card";
 import Navbar from "./components/navbar/Navbar";
 import { cards } from "./cardData";
 import "./App.css";
-import "./canvas.js";
 
 import { motion, AnimatePresence } from "framer-motion";
 
