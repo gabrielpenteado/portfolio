@@ -6,20 +6,20 @@
   height: 250px;
   border-radius: 8px;
   background-color: rgb(56, 56, 56);
-  padding: 10px 32px 14px 32px;
+  padding: 16px 32px 14px 32px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
+  justify-content: space-between;
 }
 
 .card-title {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
   color: #f0f0f0;
-  margin-bottom: 4px;
 }
 
 .card-description {
@@ -34,17 +34,17 @@
   display: flex;
   gap: 6px;
   color: var(--color3, white);
-  padding-top: 8px;
 }
 
 .card-buttons {
-  position: absolute;
-  bottom: 16px;
-  left: 92px;
+  /* position: absolute; */
+  /* bottom: 16px; */
+  /* left: 92px; */
   display: flex;
-  gap: 32px;
+  gap: 14px;
   opacity: 0;
   transition: left 0.3s ease, opacity 0.3s ease;
+  justify-content: end;
 }
 
 .card::before {
@@ -69,6 +69,7 @@
 
 .card:hover {
   border-left-width: 10px;
+  background-color: rgb(63, 63, 63);
 }
 
 .card-title,
@@ -86,7 +87,7 @@
 }
 
 .card:hover .card-buttons {
-  left: 120px;
+  /* left: 120px; */
   opacity: 1;
 }
 
@@ -128,7 +129,7 @@
   width: 15px;
 } */
 
-.gradient {
+/* .gradient {
   position: absolute;
   top: -200px;
   left: -200px;
@@ -139,11 +140,11 @@
   filter: blur(200px);
   opacity: 0;
   transition: opacity 0.3s ease;
-}
+} */
 
-.card:hover .gradient {
+/* .card:hover .gradient {
   opacity: 0.04;
-}
+} */
 
 /* Classe condicional para React */
 .react-class {

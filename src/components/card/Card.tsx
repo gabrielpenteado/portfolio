@@ -39,21 +39,23 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <div className={`card ${getBorderClass(techStack)}`}>
-      <div className="gradient"></div>
-      <h2 className="card-title">{title}</h2>
+      {/* <div className="gradient"></div> */}
+      <div className="card-text">
+        <div className="card-title">{title}</div>
 
-      <p className="card-description">{description}</p>
+        <p className="card-description">{description}</p>
 
-      <div className="card-techs">
-        {techStack &&
-          techStack.map((tech, index) => <div key={index}>{tech.name}</div>)}
+        <div className="card-techs">
+          {techStack &&
+            techStack.map((tech, index) => <div key={index}>{tech.name}</div>)}
+        </div>
       </div>
 
       <div className="card-buttons">
         <a href={codeLink} target="_blank">
           <button className="button-code">
             {/* <img className="github" src={github} alt="github" /> */}
-            Source Code
+            Repository
           </button>
         </a>
         <a href={videoLink} target="_blank">
