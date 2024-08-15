@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import Card from ".//components/card/Card";
+import Card from "./components/card/Card";
 import Navbar from "./components/navbar/Navbar";
 import { cards } from "./cardData";
 import "./App.css";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Profile from "./components/profile/Profile";
 
 // Define os tipos para as opções de tech stack
 const techOptions: string[] = [
@@ -34,9 +35,7 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <div className="header">
-        <div className="profile">
-          <p>foto</p>
-        </div>
+        <Profile />
         <Navbar
           selectedTech={selectedTech}
           onTechChange={handleTechChange}

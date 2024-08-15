@@ -93,8 +93,8 @@
 
 .button-video {
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
   color: rgb(255, 255, 255);
@@ -103,8 +103,8 @@
 
 .button-code {
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
   color: rgb(255, 255, 255);

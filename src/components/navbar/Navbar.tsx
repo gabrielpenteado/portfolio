@@ -1,5 +1,4 @@
 import "./Navbar.css";
-import react from "../../assets/react.svg";
 
 interface NavbarProps {
   selectedTech: string;

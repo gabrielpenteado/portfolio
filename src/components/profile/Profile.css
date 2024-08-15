@@ -1,0 +1,33 @@
+img {
+  width: 85px;
+  height: 85px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  border: solid 2px rgb(177, 177, 177);
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  gap: 30px;
+  margin-left: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-separator {
+  border-left: 1px solid rgb(177, 177, 177);
+  height: 80px;
+}
+
+.me {
+  font-family: "Prompt", sans-serif;
+  color: #f0f0f0;
+}
+
+.me span {
+  font-size: 20px;
+}
