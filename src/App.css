@@ -7,7 +7,9 @@
     minmax(350px, 1fr)
   ); /* Responsive grid layout */
   gap: 40px; /* Space between cards */
-  padding: 40px 40px 40px 40px;
+  padding: 20px 40px 40px 40px;
+  width: 70%;
+  height: 100vh;
 }
 
 body {
@@ -17,19 +19,22 @@ body {
 
 .app {
   padding: 10px 60px 30px 60px;
+  display: flex;
+  width: 100vw;
 }
 
 .header {
-  /* display: flex; */
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
   align-items: center;
   font-family: "Prompt", sans-serif;
-  width: 100%;
-  height: fit-content;
+  width: 15%;
+  height: 90vh;
   border-radius: 8px;
   background-color: rgb(56, 56, 56);
-  box-shadow: 0px 4px #0c0c0c;
+  box-shadow: 2px 4px #0c0c0c;
   border: 2px solid #0c0c0c;
   position: relative;
-  padding-left: 0 50px;
+  /* padding-left: 0 50px; */
 }
