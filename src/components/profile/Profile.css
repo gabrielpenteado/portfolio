@@ -14,9 +14,10 @@ img {
   display: flex;
   gap: 30px;
   /* margin-left: 20px; */
-  justify-content: center;
   align-items: center;
-  width: 30%;
+  /* justify-content: space-around; */
+  width: 100%;
+  padding: 14px 20px;
 }
 
 /* .line-separator {

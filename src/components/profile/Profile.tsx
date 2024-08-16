@@ -12,8 +12,8 @@ const Profile = () => {
       <div className="me">
         <span className="fullName">Gabriel Penteado</span>
         <span className="career">Software Developer</span>
-        <Contacts />
       </div>
+      <Contacts />
     </div>
   );
 };

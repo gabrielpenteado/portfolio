@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   font-family: "Prompt", sans-serif;
@@ -28,7 +28,8 @@ body {
   height: fit-content;
   border-radius: 8px;
   background-color: rgb(56, 56, 56);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.726);
+  box-shadow: 0px 4px #0c0c0c;
+  border: 2px solid #0c0c0c;
   position: relative;
   padding-left: 0 50px;
 }
