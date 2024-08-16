@@ -7,7 +7,7 @@
   padding: 10px 32px 14px 32px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
+  box-shadow: 0 10px 14px rgba(0, 0, 0, 0.726);
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -16,13 +16,13 @@
 .card-title {
   font-size: 30px;
   font-weight: 600;
-  color: #ffffff;
+  color: #f7f7f7;
   margin-bottom: 4px;
 }
 
 .card-description {
   font-size: 14px;
-  color: #ffffff;
+  color: #f7f7f7;
   opacity: 0.8;
   line-height: 1.4;
   font-weight: 300;
@@ -40,7 +40,7 @@
   bottom: 16px;
   left: 92px;
   display: flex;
-  gap: 32px;
+  gap: 10px;
   opacity: 0;
   transition: left 0.3s ease, opacity 0.3s ease;
 }
@@ -54,8 +54,8 @@
   width: 5px;
   background-image: linear-gradient(
     to bottom,
-    var(--color1, white),
-    var(--color2, rgb(224, 224, 224))
+    var(--color1, #f7f7f7),
+    var(--color2, rgb(233, 233, 233))
   );
   border-radius: 8px 0 0 8px;
   transition: width 0.3s ease;
@@ -80,14 +80,14 @@
 }
 
 .card:hover .card-buttons {
-  left: 120px;
-  opacity: 0.7;
+  left: 200px;
+  opacity: 0.8;
 }
 
 .button-video {
   cursor: pointer;
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
   color: whitesmoke;
@@ -96,10 +96,10 @@
 .button-code {
   cursor: pointer;
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
-  color: whitesmoke;
+  color: #f7f7f7;
 }
 
 .button-video:hover {
