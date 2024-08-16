@@ -13,21 +13,32 @@ img {
 .profile {
   display: flex;
   gap: 30px;
-  margin-left: 50px;
+  /* margin-left: 20px; */
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
 
-.line-separator {
+/* .line-separator {
   border-left: 1px solid rgb(177, 177, 177);
   height: 80px;
-}
+} */
 
 .me {
   font-family: "Prompt", sans-serif;
   color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
-.me span {
-  font-size: 20px;
+.fullName {
+  font-size: 24px;
+}
+
+.career {
+  font-size: 16px;
+  color: rgb(177, 177, 177);
 }

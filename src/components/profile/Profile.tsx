@@ -1,4 +1,5 @@
 import photo from "../../assets/foto.png";
+import Contacts from "../contacts/Contacts";
 import "./Profile.css";
 
 const Profile = () => {
@@ -7,11 +8,11 @@ const Profile = () => {
       <div className="img">
         <img src={photo} alt="photo" />
       </div>
-      <span className="line-separator"></span>
+      {/* <span className="line-separator"></span> */}
       <div className="me">
-        <span>Gabriel Penteado</span>
-        <p>Software Developer</p>
-        <div className="contacts"></div>
+        <span className="fullName">Gabriel Penteado</span>
+        <span className="career">Software Developer</span>
+        <Contacts />
       </div>
     </div>
   );

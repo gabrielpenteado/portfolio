@@ -33,7 +33,7 @@
 .card-techs {
   display: flex;
   gap: 6px;
-  color: var(--color3, white);
+  color: var(--color3, #f0f0f0);
 }
 
 .card-buttons {
@@ -57,7 +57,7 @@
   background-image: linear-gradient(
     to bottom,
     var(--color1, rgb(240, 240, 240)),
-    var(--color2, rgb(224, 224, 224))
+    /* var(--color2, rgb(224, 224, 224)) */
   );
   border-radius: 8px 0 0 8px;
   transition: width 0.3s ease;
@@ -97,28 +97,28 @@
   border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: rgb(177, 177, 177);
   font-family: "Roboto", sans-serif;
 }
 
 .button-code {
   cursor: pointer;
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 0.25rem;
   font-size: 15px;
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: rgb(177, 177, 177);
   font-family: "Roboto", sans-serif;
 }
 
 .button-video:hover {
   background-color: #242424;
-  color: rgb(211, 211, 211);
+  color: #f0f0f0;
 }
 
 .button-code:hover {
   background-color: #242424;
-  color: rgb(211, 211, 211);
+  color: #f0f0f0;
 }
 
 /* .github {

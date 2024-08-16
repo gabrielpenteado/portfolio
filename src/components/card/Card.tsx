@@ -52,18 +52,22 @@ const Card: React.FC<CardProps> = ({
       </div>
 
       <div className="card-buttons">
-        <a href={codeLink} target="_blank">
-          <button className="button-code">
-            {/* <img className="github" src={github} alt="github" /> */}
-            Repository
-          </button>
-        </a>
-        <a href={videoLink} target="_blank">
-          <button className="button-video">
-            {/* <img className="video" src={play} alt="video" /> */}
-            Video
-          </button>
-        </a>
+        {codeLink && (
+          <a href={codeLink} target="_blank">
+            <button className="button-code">
+              {/* <img className="github" src={github} alt="github" /> */}
+              Repository
+            </button>
+          </a>
+        )}
+        {videoLink && (
+          <a href={videoLink} target="_blank">
+            <button className="button-video">
+              {/* <img className="video" src={play} alt="video" /> */}
+              Video
+            </button>
+          </a>
+        )}
       </div>
     </div>
   );

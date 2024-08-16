@@ -1,0 +1,20 @@
+.contactsButton {
+  display: flex;
+  padding: 0.4rem;
+  border-radius: 0.25rem;
+  background-color: rgb(56, 56, 56);
+  fill: rgb(177, 177, 177);
+}
+
+.contactsButton:hover {
+  background-color: #242424;
+  fill: white;
+  cursor: pointer;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 6px;
+}

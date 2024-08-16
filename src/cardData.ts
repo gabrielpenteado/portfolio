@@ -8,8 +8,8 @@ export interface CardData {
   title: string;
   description: string;
   techStack: TechStackItem[];
-  codeLink: string;
-  videoLink: string;
+  codeLink?: string;
+  videoLink?: string;
 }
 
 export const cards: CardData[] = [
@@ -96,7 +96,6 @@ export const cards: CardData[] = [
       { name: "gitLab" },
     ],
     codeLink: "https://google.com",
-    videoLink: "https://google.com",
   },
   {
     id: 6,
