@@ -9,7 +9,7 @@
   padding: 16px 32px 14px 32px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.726);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.726);
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
@@ -41,7 +41,7 @@
   /* bottom: 16px; */
   /* left: 92px; */
   display: flex;
-  gap: 14px;
+  gap: 10px;
   opacity: 0;
   transition: left 0.3s ease, opacity 0.3s ease;
   justify-content: end;
@@ -57,7 +57,7 @@
   background-image: linear-gradient(
     to bottom,
     var(--color1, rgb(240, 240, 240)),
-    /* var(--color2, rgb(224, 224, 224)) */
+    var(--color2, rgb(240, 240, 240))
   );
   border-radius: 8px 0 0 8px;
   transition: width 0.3s ease;
@@ -149,19 +149,19 @@
 /* Classe condicional para React */
 .react-class {
   --color1: #0880d6;
-  --color2: #61dafb;
+  --color2: #0880d6;
 }
 
 /* Classe condicional para Vue */
 .vue-class {
-  --color1: #25a505;
+  --color1: #008800;
   --color2: #008800;
 }
 
 /* Classe condicional para Angular */
 .angular-class {
   --color1: #c20000;
-  --color2: #f70303;
+  --color2: #c20000;
 }
 
 @media (max-width: 600px) {
