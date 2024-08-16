@@ -2,8 +2,10 @@
   position: relative;
   width: 350px;
   height: 200px;
-  background: linear-gradient(-45deg, #161616 0%, #000000 100%);
-  color: #81818144;
+  /* background: linear-gradient(-45deg, #161616 0%, #000000 100%); original */
+  background: linear-gradient(-45deg, #1d1d1d 0%, #313131 100%);
+  /* color: #81818144; original */
+  color: #999999af;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,8 +30,10 @@
   );
   z-index: -10;
   pointer-events: none;
-  transition: all 0.8s cubic-bezier(0.175, 0.95, 0.9, 1.275);
-  box-shadow: 0px 20px 30px hsla(0, 0%, 0%, 0.521);
+  /* transition: all 0.8s cubic-bezier(0.175, 0.95, 0.9, 1.275); original */
+  transition: all 0.6s cubic-bezier(0.175, 0.95, 0.9, 1.275);
+  /* box-shadow: 0px 20px 30px hsla(0, 0%, 0%, 0.521); original */
+  box-shadow: 0px 20px 30px hsla(0, 0%, 0%, 0.815);
 }
 
 .card::after {
@@ -65,12 +69,18 @@
 }
 
 button {
-  color: var(--button-color, #bebfc5);
+  /* color: var(--button-color, #bebfc5); original */
+  color: #bebfc5;
   font-weight: 400;
   background-color: transparent;
-  border: 1px var(--button-border-color, #bebfc5) solid;
+  /* border: 1px var(--button-border-color, #bebfc5) solid; original */
   padding: 4px 6px;
   cursor: pointer;
+}
+
+button:hover {
+  color: var(--button-color, #bebfc5);
+  border: 1px var(--button-border-color, #bebfc5) solid;
 }
 
 .card:hover::after {
