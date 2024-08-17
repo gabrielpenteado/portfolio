@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 22px;
   background-color: rgb(56, 56, 56);
   padding: 30px;
   border-radius: 8px;
@@ -32,8 +32,10 @@
   position: relative;
   font-size: 15px;
   color: #f2f2f2;
+  /* font-family: "Roboto", monospace; */
   font-family: "Prompt", sans-serif;
   /* font-weight: 600; */
+  /* letter-spacing: 1px; */
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -69,18 +71,30 @@
 
 /* Classe condicional para React */
 .react {
-  --color: #0880d6;
-  --shadow: #4c8bf580;
+  --color: #00d8ff;
+  --shadow: #0095ffc4;
 }
 
 /* Classe condicional para Vue */
 .vue {
-  --color: #008800;
-  --shadow: #00700f80;
+  --color: #00ad00;
+  --shadow: #00ce1bb6;
 }
 
 /* Classe condicional para Angular */
 .angular {
-  --color: #e00000;
-  --shadow: #f54c4c80;
+  --color: #e40000;
+  --shadow: #ff0000be;
 }
+
+/* Classe condicional para JavaScript */
+.javascript {
+  --color: #f7df1e;
+  --shadow: #ebcf00bd;
+}
+
+/* Classe condicional para TypeScript */
+/* .typescript {
+  --color: #0050fd;
+  --shadow: #0059ffd8;
+} */

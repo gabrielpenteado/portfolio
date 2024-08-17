@@ -32,6 +32,10 @@ const Card: React.FC<CardProps> = ({
         return "vue-class";
       case techList.some((tech) => tech.name.includes("angular")):
         return "angular-class";
+      case techList.some((tech) => tech.name.includes("javaScript")):
+        return "javascript-class";
+      case techList.some((tech) => tech.name.includes("typeScript")):
+        return "typescript-class";
       default:
         return ""; // Classe padrão
     }

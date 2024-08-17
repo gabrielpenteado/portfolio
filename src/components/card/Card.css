@@ -100,7 +100,7 @@
   border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
-  color: rgb(177, 177, 177);
+  color: #d4d4d4;
   font-family: "Roboto", sans-serif;
   box-shadow: 1px 2px #0c0c0c;
 }
@@ -111,7 +111,7 @@
   border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
-  color: rgb(177, 177, 177);
+  color: #d4d4d4;
   font-family: "Roboto", sans-serif;
   box-shadow: 1px 2px #0c0c0c;
 }
@@ -153,20 +153,26 @@
 
 /* Classe condicional para React */
 .react-class {
-  --color1: #0880d6;
-  --color2: #0880d6;
+  --color1: #00d8ff;
+  --color2: #00d8ff;
 }
 
 /* Classe condicional para Vue */
 .vue-class {
-  --color1: #008800;
-  --color2: #008800;
+  --color1: #00a500;
+  --color2: #00a500;
 }
 
 /* Classe condicional para Angular */
 .angular-class {
-  --color1: #c20000;
-  --color2: #c20000;
+  --color1: #e20000;
+  --color2: #e20000;
+}
+
+/* Classe condicional para Angular */
+.javascript-class {
+  --color1: #f7df1e;
+  --color2: #f7df1e;
 }
 
 @media (max-width: 600px) {
