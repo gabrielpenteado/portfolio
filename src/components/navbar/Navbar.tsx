@@ -12,22 +12,27 @@ const Navbar: React.FC<NavbarProps> = ({
   techOptions,
 }) => {
   return (
-    <div className="wrapper">
+    <div className="radio-button-container">
       {techOptions.map((tech, index) => (
-        <label key={index} className={`option ${tech}`}>
+        <div className={`radio-button ${tech}`}>
           <input
-            className="input"
+            className="radio-button__input"
             type="radio"
-            name="btn"
+            id={index.toString()}
+            name="radio-group"
             value={tech}
             checked={selectedTech === tech}
             onChange={() => onTechChange(tech)}
           />
-          <span className="radio-button__custom"></span>
-          <div className="btn">
-            <span className="span">{tech}</span>
-          </div>
-        </label>
+          <label
+            key={index}
+            htmlFor={index.toString()}
+            className="radio-button__label"
+          >
+            <span className="radio-button__custom"></span>
+            <div className="techName">{tech}</div>
+          </label>
+        </div>
       ))}
     </div>
   );

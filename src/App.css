@@ -4,12 +4,12 @@
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(350px, 1fr)
+    minmax(330px, 1fr)
   ); /* Responsive grid layout */
   gap: 40px; /* Space between cards */
-  padding: 20px 40px 40px 40px;
-  width: 70%;
-  height: 100vh;
+  padding: 30px;
+  width: 75%;
+  height: 100%;
 }
 
 body {
@@ -18,9 +18,10 @@ body {
 }
 
 .app {
-  padding: 10px 60px 30px 60px;
+  /* padding: 10px 0 30px 40px; */
   display: flex;
-  width: 100vw;
+  justify-content: space-evenly;
+  /* width: 100vw; */
 }
 
 .header {
@@ -29,12 +30,12 @@ body {
   /* justify-content: space-between; */
   align-items: center;
   font-family: "Prompt", sans-serif;
-  width: 15%;
+  /* width: 15%; */
   height: 90vh;
   border-radius: 8px;
-  background-color: rgb(56, 56, 56);
+  /* background-color: rgb(56, 56, 56); */
   box-shadow: 2px 4px #0c0c0c;
   border: 2px solid #0c0c0c;
   position: relative;
-  /* padding-left: 0 50px; */
+  margin-top: 20px;
 }
