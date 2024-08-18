@@ -1,6 +1,6 @@
 import photo from "../../assets/foto.png";
 import Contacts from "../contacts/Contacts";
-import "./Profile.css";
+import "./Profile.scss";
 
 const Profile = () => {
   return (

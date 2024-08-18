@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./Card.scss";
 // import github from "../../assets/github-brands-solid.svg";
 // import play from "../../assets/play-solid.svg";
 
@@ -34,8 +34,6 @@ const Card: React.FC<CardProps> = ({
         return "angular-class";
       case techList.some((tech) => tech.name.includes("javaScript")):
         return "javascript-class";
-      case techList.some((tech) => tech.name.includes("typeScript")):
-        return "typescript-class";
       default:
         return ""; // Classe padrão
     }

@@ -1,4 +1,4 @@
-import "./Contacts.css";
+import "./Contacts.scss";
 import resume from "../../assets/gabrielpenteado.pdf";
 
 const Contacts = () => {
