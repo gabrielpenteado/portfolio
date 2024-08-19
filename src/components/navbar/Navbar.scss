@@ -99,3 +99,54 @@
   --color: #0050fd;
   --shadow: #0059ffd8;
 } */
+
+@media (max-width: 1600px) {
+  .radio-button-container {
+    gap: 6px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .radio-button__label {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 13px;
+  }
+
+  .radio-button__custom {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .radio-button-container {
+    gap: 6px;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .radio-button__label {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 13px;
+  }
+
+  .radio-button__custom {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .radio-button-container {
+    display: none;
+  }
+}

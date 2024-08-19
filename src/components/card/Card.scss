@@ -6,7 +6,7 @@
   height: 250px;
   border-radius: 8px;
   background-color: rgb(56, 56, 56);
-  padding: 16px 32px 14px 32px;
+  padding: 16px 20px 14px 32px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 10px 20px #0c0c0c;
@@ -35,8 +35,9 @@
 
 .card-techs {
   display: flex;
-  gap: 6px;
-  color: var(--color3, #f0f0f0);
+  flex-wrap: wrap;
+  gap: 2px;
+  color: #f0f0f0;
 }
 
 .card-buttons {
@@ -44,6 +45,7 @@
   /* bottom: 16px; */
   /* left: 92px; */
   display: flex;
+  justify-self: end;
   gap: 10px;
   opacity: 0;
   transition: left 0.3s ease, opacity 0.3s ease;
@@ -193,30 +195,77 @@
 
   .button-video {
     font-size: 13px;
+    padding: 6px 10px;
   }
 
   .button-code {
     font-size: 13px;
+    padding: 6px 10px;
   }
 
   .card-techs {
     display: flex;
     gap: 6px;
-    color: var(--color3, white);
-    padding-top: 8px;
-    font-size: 14px;
+    // color: var(--color3, white);
+    // padding-top: 6px;
+    font-size: 12px;
   }
 
   .card-description {
     font-size: 12px;
     color: #ffffff;
     opacity: 0.8;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: 300;
   }
 
   .card-title {
     font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .card {
+    width: 100%;
+    height: 190px;
+    padding: 14px 20px 10px 32px;
+  }
+
+  .card-buttons {
+    display: flex;
+    gap: 8px;
+    opacity: 1;
+  }
+
+  .button-video {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .button-code {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .card-techs {
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .card-description {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.8;
+    // line-height: 1.2;
+    font-weight: 300;
+  }
+
+  .card-title {
+    font-size: 17px;
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 4px;

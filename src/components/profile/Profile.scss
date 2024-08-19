@@ -44,3 +44,79 @@ img {
   font-size: 16px;
   color: rgb(177, 177, 177);
 }
+
+@media (max-width: 1600px) {
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile {
+    gap: 10px;
+    padding: 7px 10px;
+  }
+
+  .fullName {
+    font-size: 20px;
+  }
+
+  .career {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1600px) {
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile {
+    gap: 10px;
+    padding: 7px 10px;
+  }
+
+  .fullName {
+    font-size: 18px;
+  }
+
+  .career {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fullName {
+    font-size: 16px;
+  }
+
+  .career {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    //  margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    //  width: 100%;
+    padding: 1px 1px;
+  }
+
+  .fullName {
+    font-size: 12px;
+  }
+
+  .career {
+    display: none;
+  }
+}
