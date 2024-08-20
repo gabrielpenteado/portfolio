@@ -1,0 +1,54 @@
+.contactsButton {
+  display: flex;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(56, 56, 56);
+  fill: #c4c4c4;
+}
+
+.contactsButton:hover {
+  background-color: #242424;
+  fill: white;
+  cursor: pointer;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px;
+}
+
+@media (max-width: 1200px) {
+  .contactsButton {
+    display: flex;
+    padding: 0.3rem;
+  }
+
+  .contactsButton:hover {
+    background-color: #242424;
+    fill: white;
+    cursor: pointer;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    padding: 8px 4px;
+  }
+
+  .contactsButton {
+    display: flex;
+    padding: 0.3rem;
+  }
+}

@@ -1,5 +1,4 @@
-import React from "react";
-import "./Navbar.css";
+import "./Navbar.scss";
 
 interface NavbarProps {
   selectedTech: string;
@@ -13,20 +12,29 @@ const Navbar: React.FC<NavbarProps> = ({
   techOptions,
 }) => {
   return (
-    <nav className="radio-inputs">
+    <div className="radio-button-container">
       {techOptions.map((tech, index) => (
-        <label key={index} className="radio">
+        <div className={`radio-button ${tech}`}>
           <input
+            className="radio-button__input"
             type="radio"
-            name="tech-stack"
+            id={index.toString()}
+            name="radio-group"
             value={tech}
             checked={selectedTech === tech}
             onChange={() => onTechChange(tech)}
           />
-          <span className="name">{tech}</span>
-        </label>
+          <label
+            key={index}
+            htmlFor={index.toString()}
+            className="radio-button__label"
+          >
+            <span className="radio-button__custom"></span>
+            <div className="techName">{tech}</div>
+          </label>
+        </div>
       ))}
-    </nav>
+    </div>
   );
 };
 

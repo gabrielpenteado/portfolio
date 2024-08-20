@@ -1,9 +1,6 @@
-import React from "react";
-import "./Card.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faVideo } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import "./Card.scss";
+// import github from "../../assets/github-brands-solid.svg";
+// import play from "../../assets/play-solid.svg";
 
 interface TechStackItem {
   name: string;
@@ -14,43 +11,64 @@ interface CardProps {
   title: string;
   description: string;
   techStack: TechStackItem[];
-  codeLink: string;
-  videoLink: string;
+  codeLink?: string;
+  videoLink?: string;
+  certificateLink?: string;
 }
 
 const Card: React.FC<CardProps> = ({
-  image,
   title,
   description,
   techStack,
   codeLink,
   videoLink,
 }) => {
+  const getBorderClass = (techList: TechStackItem[]): string => {
+    // Determine a classe da borda com base no array techStack usando switch
+    switch (true) {
+      case techList.some((tech) => tech.name.includes("react")):
+        return "react-class";
+      case techList.some((tech) => tech.name.includes("vue")):
+        return "vue-class";
+      case techList.some((tech) => tech.name.includes("angular")):
+        return "angular-class";
+      case techList.some((tech) => tech.name.includes("javaScript")):
+        return "javascript-class";
+      default:
+        return ""; // Classe padrão
+    }
+  };
+
   return (
-    <div className="card">
-      <img src={image} alt={title} />
-      <div className="card-details">
-        <h2>{title}</h2>
-        <div className="tech-stack">
-          {techStack.map((tech, index) => (
-            <div key={index} className="tech-stack-item">
-              {tech.name}
-            </div>
-          ))}
+    <div className={`card ${getBorderClass(techStack)}`}>
+      {/* <div className="gradient"></div> */}
+      <div className="card-text">
+        <div className="card-title">{title}</div>
+
+        <p className="card-description">{description}</p>
+
+        <div className="card-techs">
+          {techStack &&
+            techStack.map((tech, index) => <div key={index}>{tech.name}</div>)}
         </div>
-        <p>{description}</p>
       </div>
 
-      <div className="buttons">
+      <div className="card-buttons">
         {codeLink && (
-          <Link to={codeLink} target="_blank" className="btn">
-            <FontAwesomeIcon icon={faCode} />
-          </Link>
+          <a href={codeLink} target="_blank">
+            <button className="button-code">
+              {/* <img className="github" src={github} alt="github" /> */}
+              Repository
+            </button>
+          </a>
         )}
         {videoLink && (
-          <Link to={videoLink} target="_blank" className="btn">
-            <FontAwesomeIcon icon={faVideo} />
-          </Link>
+          <a href={videoLink} target="_blank">
+            <button className="button-video">
+              {/* <img className="video" src={play} alt="video" /> */}
+              Video
+            </button>
+          </a>
         )}
       </div>
     </div>

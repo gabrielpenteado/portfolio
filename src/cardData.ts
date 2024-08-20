@@ -8,8 +8,8 @@ export interface CardData {
   title: string;
   description: string;
   techStack: TechStackItem[];
-  codeLink: string;
-  videoLink: string;
+  codeLink?: string;
+  videoLink?: string;
 }
 
 export const cards: CardData[] = [
@@ -21,11 +21,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 1. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "React" },
-      { name: "TypeScript" },
-      { name: "CSS" },
-      { name: "Visual Studio Code" },
-      { name: "GitHub" },
+      { name: "react" },
+      { name: "typeScript" },
+      { name: "css" },
+      { name: "visual Studio Code" },
+      { name: "gitHub" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -38,11 +38,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -55,11 +55,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "React" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "react" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -72,11 +72,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -89,14 +89,13 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
-    videoLink: "https://google.com",
   },
   {
     id: 6,
@@ -106,11 +105,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "Node.js" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "node.js" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -123,11 +122,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "TypeScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "typeScript" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -140,11 +139,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -157,11 +156,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "WebStorm" },
-      { name: "TypeScript" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "sass" },
+      { name: "vue" },
+      { name: "typeScript" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -174,11 +173,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "React" },
-      { name: "TypeScript" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "javaScript" },
+      { name: "react" },
+      { name: "typeScript" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -191,11 +190,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "React" },
-      { name: "WebStorm" },
-      { name: "GitLab" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "react" },
+      { name: "webStorm" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -208,11 +207,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "Sass" },
-      { name: "Node.js" },
-      { name: "GitLab" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "angular" },
+      { name: "node.js" },
+      { name: "gitLab" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
@@ -225,11 +224,11 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "JavaScript" },
-      { name: "HTML" },
-      { name: "TypeScirpt" },
-      { name: "WebStorm" },
-      { name: "React" },
+      { name: "javaScript" },
+      { name: "html" },
+      { name: "typeScript" },
+      { name: "webStorm" },
+      { name: "react" },
     ],
     codeLink: "https://google.com",
     videoLink: "https://google.com",
