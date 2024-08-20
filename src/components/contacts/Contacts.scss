@@ -22,7 +22,7 @@
 @media (max-width: 1200px) {
   .contactsButton {
     display: flex;
-    padding: 0.4rem;
+    padding: 0.3rem;
   }
 
   .contactsButton:hover {
@@ -34,17 +34,17 @@
   .contacts {
     display: flex;
     justify-content: center;
-    gap: 4px;
-    padding: 6px;
+    gap: 2px;
+    padding: 4px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .contacts {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2px;
-    padding: 2px;
+    padding: 8px 4px;
   }
 
   .contactsButton {

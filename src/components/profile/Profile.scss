@@ -57,26 +57,6 @@ img {
   }
 
   .fullName {
-    font-size: 20px;
-  }
-
-  .career {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 1600px) {
-  img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .profile {
-    gap: 10px;
-    padding: 7px 10px;
-  }
-
-  .fullName {
     font-size: 18px;
   }
 
@@ -95,7 +75,7 @@ img {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   img {
     width: 40px;
     height: 40px;
@@ -113,7 +93,7 @@ img {
   }
 
   .fullName {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .career {

@@ -271,3 +271,21 @@
     margin-bottom: 4px;
   }
 }
+
+@media (max-width: 800px) {
+  .card-buttons {
+    display: flex;
+    gap: 8px;
+    opacity: 1;
+  }
+
+  .button-video {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+
+  .button-code {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+}
