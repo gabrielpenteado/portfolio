@@ -269,7 +269,7 @@ $time-4: 200s;
       auto-fill,
       minmax(250px, 1fr)
     ); /* Responsive grid layout */
-    gap: 10px; /* Space between cards */
+    gap: 15px; /* Space between cards */
     // padding-left: 30px;
     position: relative;
     width: 75%;
@@ -277,7 +277,28 @@ $time-4: 200s;
   }
 
   .header {
-    width: 16%;
+    width: 20%;
+    margin-left: 10px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    ); /* Responsive grid layout */
+    gap: 15px; /* Space between cards */
+    // padding-left: 30px;
+    position: relative;
+    width: 70%;
+    padding: 1px;
+  }
+
+  .header {
+    width: 21%;
     margin-left: 10px;
     padding: 6px;
   }
