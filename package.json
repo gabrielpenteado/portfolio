@@ -1,7 +1,7 @@
 {
-  "homepage": "https://gabrielpenteado.github.io/portfolio",
+  "homepage": "https://gabrielpenteado.github.io/portfolio/",
   "name": "portfolio",
-  "private": true,
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
