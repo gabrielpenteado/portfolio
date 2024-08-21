@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   HashRouter,
   RouterProvider,
+  Routes,
 } from "react-router-dom";
 
 const router = createBrowserRouter(
@@ -22,7 +23,9 @@ const router = createBrowserRouter(
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HashRouter>
-      <RouterProvider router={router} />
+      <Routes>
+        <RouterProvider router={router} />
+      </Routes>
     </HashRouter>
   </StrictMode>
 );
