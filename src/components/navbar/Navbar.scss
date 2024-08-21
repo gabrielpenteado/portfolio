@@ -148,8 +148,8 @@
 @media (max-width: 1000px) {
   .radio-button-container {
     // display: none;
-    gap: 1px;
-    padding: 8px;
+    gap: 6px;
+    padding: 6px;
     margin-top: 6px;
     border: 1px solid #0c0c0c;
   }
@@ -166,7 +166,7 @@
     padding: 6px;
     margin-bottom: 1px;
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     color: #f2f2f2;
     font-family: "Roboto", sans-serif;
     /* font-weight: 600; */
@@ -202,30 +202,30 @@
 
 @media (max-width: 600px) {
   .radio-button__label {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .radio-button-container {
-    gap: 0px;
-    padding: 1px;
+    gap: 5px;
+    padding: 2px;
     border: 1px solid #0c0c0c;
     // justify-content: center;
     // line-height: 0.6rem;
-    font-size: 10px;
+    font-size: 12px;
     // align-items: center;
     margin-top: 1px;
     padding-bottom: 10px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 430px) {
   .radio-button__label {
     font-size: 10px;
   }
 
   .radio-button-container {
-    gap: 0px;
-    padding: 1px;
+    gap: 6px;
+    padding: 2px;
     border: 1px solid #0c0c0c;
     // align-items: center;
     margin-top: 1px;
