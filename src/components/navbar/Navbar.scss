@@ -84,15 +84,33 @@
 
 /* Classe condicional para Angular */
 .angular {
-  --color: #e40000;
+  --color: #e20000;
   --shadow: #ff0000be;
 }
 
-/* Classe condicional para JavaScript */
-.javaScript {
-  --color: #f7df1e;
-  --shadow: #ebcf00bd;
+/* Classe condicional para Next */
+.next {
+  --color: #999999;
+  --shadow: #818181d2;
 }
+
+/* Classe condicional para Java */
+.java {
+  --color: #fd6500;
+  --shadow: #e45b00cb;
+}
+
+/* Classe condicional para Node */
+.node {
+  --color: #007525;
+  --shadow: #00912ebe;
+}
+
+/* Classe condicional para JavaScript */
+// .javaScript {
+//   --color: #f7df1e;
+//   --shadow: #ebcf00bd;
+// }
 
 /* Classe condicional para TypeScript */
 /* .typescript {

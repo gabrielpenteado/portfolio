@@ -70,6 +70,7 @@
 
 .card:hover::before {
   width: 10px;
+  box-shadow: 0 0 5px var(--shadow-hover, rgba(221, 221, 221, 0.753));
 }
 
 .card:hover {
@@ -98,7 +99,7 @@
 
 .button-video {
   cursor: pointer;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
@@ -109,7 +110,7 @@
 
 .button-code {
   cursor: pointer;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 6px;
   font-size: 15px;
   background-color: transparent;
@@ -157,75 +158,49 @@
 .react-class {
   --color1: #00d8ff;
   --color2: #00d8ff;
+  --shadow-hover: #00bedfd0;
 }
 
 /* Classe condicional para Vue */
 .vue-class {
   --color1: #00a500;
   --color2: #00a500;
+  --shadow-hover: #00af00c7;
 }
 
 /* Classe condicional para Angular */
 .angular-class {
-  --color1: #e20000;
-  --color2: #e20000;
+  --color1: #d60000;
+  --color2: #d60000;
+  --shadow-hover: #da0000c0;
+}
+
+/* Classe condicional para Next */
+.next-class {
+  --color1: #999999;
+  --color2: #999999;
+  --shadow-hover: #818181d2;
+}
+
+/* Classe condicional para Java */
+.java-class {
+  --color1: #fd6500;
+  --color2: #fd6500;
+  --shadow-hover: #e45b00cb;
+}
+
+/* Classe condicional para Node */
+.node-class {
+  --color1: #007525;
+  --color2: #007525;
+  --shadow-hover: #00912ebe;
 }
 
 /* Classe condicional para Angular */
-.javascript-class {
-  --color1: #f7df1e;
-  --color2: #f7df1e;
-}
-
-@media (max-width: 600px) {
-  .card {
-    transform: none;
-    overflow: visible;
-    transition: none;
-  }
-
-  .card-buttons {
-    /* position: absolute; */
-    bottom: 16px;
-    left: 75px;
-    display: flex;
-    gap: 32px;
-    opacity: 1;
-  }
-
-  .button-video {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .button-code {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .card-techs {
-    display: flex;
-    gap: 6px;
-    // color: var(--color3, white);
-    // padding-top: 6px;
-    font-size: 12px;
-  }
-
-  .card-description {
-    font-size: 12px;
-    color: #ffffff;
-    opacity: 0.8;
-    line-height: 1.2;
-    font-weight: 300;
-  }
-
-  .card-title {
-    font-size: 24px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 4px;
-  }
-}
+// .javascript-class {
+//   --color1: #f7df1e;
+//   --color2: #f7df1e;
+// }
 
 @media (max-width: 1600px) {
   .card {
@@ -237,7 +212,7 @@
   .card-buttons {
     display: flex;
     gap: 8px;
-    opacity: 1;
+    // opacity: 1;
   }
 
   .button-video {
@@ -303,5 +278,55 @@
     opacity: 0.8;
     line-height: 1;
     font-weight: 300;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    transform: none;
+    overflow: visible;
+    transition: none;
+  }
+
+  .card-buttons {
+    /* position: absolute; */
+    bottom: 16px;
+    left: 75px;
+    display: flex;
+    gap: 32px;
+    opacity: 1;
+  }
+
+  .button-video {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .button-code {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .card-techs {
+    display: flex;
+    gap: 6px;
+    // color: var(--color3, white);
+    // padding-top: 6px;
+    font-size: 12px;
+  }
+
+  .card-description {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.8;
+    line-height: 1.2;
+    font-weight: 300;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
   }
 }

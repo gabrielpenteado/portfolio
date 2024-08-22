@@ -105,7 +105,7 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "node.js" },
+      { name: "node" },
       { name: "html" },
       { name: "sass" },
       { name: "webStorm" },
@@ -174,7 +174,7 @@ export const cards: CardData[] = [
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
       { name: "javaScript" },
-      { name: "react" },
+      { name: "java" },
       { name: "typeScript" },
       { name: "webStorm" },
       { name: "gitLab" },
@@ -190,9 +190,9 @@ export const cards: CardData[] = [
     description:
       "Descrição do Card 2. Esta é uma breve descrição do card para demonstrar o layout.",
     techStack: [
-      { name: "javaScript" },
+      { name: "next" },
       { name: "html" },
-      { name: "react" },
+      { name: "reat" },
       { name: "webStorm" },
       { name: "gitLab" },
     ],
@@ -210,7 +210,7 @@ export const cards: CardData[] = [
       { name: "javaScript" },
       { name: "html" },
       { name: "angular" },
-      { name: "node.js" },
+      { name: "node" },
       { name: "gitLab" },
     ],
     codeLink: "https://google.com",

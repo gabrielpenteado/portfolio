@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
   codeLink,
   videoLink,
 }) => {
-  const getBorderClass = (techList: TechStackItem[]): string => {
+  const getTechClass = (techList: TechStackItem[]): string => {
     // Determine a classe da borda com base no array techStack usando switch
     switch (true) {
       case techList.some((tech) => tech.name.includes("react")):
@@ -32,15 +32,19 @@ const Card: React.FC<CardProps> = ({
         return "vue-class";
       case techList.some((tech) => tech.name.includes("angular")):
         return "angular-class";
-      case techList.some((tech) => tech.name.includes("javaScript")):
-        return "javascript-class";
+      case techList.some((tech) => tech.name.includes("next")):
+        return "next-class";
+      case techList.some((tech) => tech.name.includes("java")):
+        return "java-class";
+      case techList.some((tech) => tech.name.includes("node")):
+        return "node-class";
       default:
         return ""; // Classe padrão
     }
   };
 
   return (
-    <div className={`card ${getBorderClass(techStack)}`}>
+    <div className={`card ${getTechClass(techStack)}`}>
       {/* <div className="gradient"></div> */}
       <div className="card-text">
         <div className="card-title">{title}</div>

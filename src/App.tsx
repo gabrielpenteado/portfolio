@@ -8,7 +8,15 @@ import { motion, AnimatePresence } from "framer-motion";
 import Profile from "./components/profile/Profile";
 
 // Define os tipos para as opções de tech stack
-const techOptions: string[] = ["all", "javaScript", "react", "vue", "angular"];
+const techOptions: string[] = [
+  "all",
+  "react",
+  "vue",
+  "angular",
+  "next",
+  "java",
+  "node",
+];
 
 const App: React.FC = () => {
   const [selectedTech, setSelectedTech] = useState<string>("all");
