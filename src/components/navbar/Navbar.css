@@ -15,6 +15,10 @@
   flex-wrap: wrap;
 }
 
+.value-color {
+  appearance: none;
+}
+
 .span {
   font-size: 18px;
   text-transform: capitalize;
@@ -42,6 +46,7 @@
   height: 9px;
   border-radius: 50%;
   border: 2px solid #0d11172f;
+  display: none;
 }
 
 .value {
