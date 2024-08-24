@@ -19,9 +19,14 @@
   border-right: 2px solid #0c0c0c;
 }
 
+.card.text {
+  display: flex;
+  justify-content: center;
+}
+
 .card-title {
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 500;
   color: #f0f0f0;
 }
 
@@ -36,8 +41,12 @@
 .card-techs {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px;
+  font-size: 15px;
+  gap: 4px;
   color: #f0f0f0;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
 }
 
 .card-buttons {
@@ -46,7 +55,7 @@
   /* left: 92px; */
   display: flex;
   justify-self: end;
-  gap: 10px;
+  gap: 12px;
   opacity: 0;
   transition: left 0.3s ease, opacity 0.3s ease;
   justify-content: end;
@@ -70,7 +79,7 @@
 
 .card:hover::before {
   width: 10px;
-  box-shadow: 0 0 5px var(--shadow-hover, rgba(221, 221, 221, 0.753));
+  //   box-shadow: 0 0 5px var(--shadow-hover, rgba(221, 221, 221, 0.753));
 }
 
 .card:hover {
@@ -97,36 +106,39 @@
   opacity: 1;
 }
 
-.button-video {
+.button {
+  padding: 7px 14px;
+  border: none;
+  border-radius: 2px;
+  background: #424242;
+  color: white;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1) inset,
+    0 0 0 1px rgba(0, 0, 0, 0.7), 0 -1px 0 0 rgba(0, 0, 0, 0.7) inset,
+    0 1px 2px 1px rgba(0, 0, 0, 0.6);
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-size: 15px;
-  background-color: transparent;
-  color: #d4d4d4;
-  font-family: "Roboto", sans-serif;
-  box-shadow: 1px 2px #0c0c0c;
+  transition: 50ms ease-out;
+  font-weight: 500;
 }
 
-.button-code {
-  cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-size: 15px;
-  background-color: transparent;
-  color: #d4d4d4;
-  font-family: "Roboto", sans-serif;
-  box-shadow: 1px 2px #0c0c0c;
+.button:hover,
+.button:focus,
+.button:focus-visible {
+  background: #353535;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05) inset,
+    0 0 0 1px rgba(0, 0, 0, 0.7), 0 -1px 0 0 rgba(0, 0, 0, 0.7) inset,
+    0 1px 2px 1px rgba(0, 0, 0, 0.6);
+  border: none;
+  outline: none;
 }
 
-.button-video:hover {
-  background-color: #242424;
-  color: #f0f0f0;
+.button:active {
+  background: #181818;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.05), 0 1px 2px 1px rgba(0, 0, 0, 0.6) inset;
 }
 
-.button-code:hover {
-  background-color: #242424;
-  color: #eeeeee;
+.codebtn {
+  padding: 7px 12px;
 }
 
 /* .github {
@@ -158,42 +170,42 @@
 .react-class {
   --color1: #00d8ff;
   --color2: #00d8ff;
-  --shadow-hover: #00bedfd0;
+  //   --shadow-hover: #00bedfd0;
 }
 
 /* Classe condicional para Vue */
 .vue-class {
   --color1: #00a500;
   --color2: #00a500;
-  --shadow-hover: #00af00c7;
+  //   --shadow-hover: #00af00c7;
 }
 
 /* Classe condicional para Angular */
 .angular-class {
   --color1: #d60000;
   --color2: #d60000;
-  --shadow-hover: #da0000c0;
+  //   --shadow-hover: #da0000c0;
 }
 
 /* Classe condicional para Next */
 .next-class {
   --color1: #999999;
   --color2: #999999;
-  --shadow-hover: #818181d2;
+  //   --shadow-hover: #818181d2;
 }
 
 /* Classe condicional para Java */
 .java-class {
   --color1: #fd6500;
   --color2: #fd6500;
-  --shadow-hover: #e45b00cb;
+  //   --shadow-hover: #e45b00cb;
 }
 
 /* Classe condicional para Node */
 .node-class {
   --color1: #007525;
   --color2: #007525;
-  --shadow-hover: #00912ebe;
+  //   --shadow-hover: #00912ebe;
 }
 
 /* Classe condicional para Angular */
@@ -215,14 +227,9 @@
     // opacity: 1;
   }
 
-  .button-video {
-    font-size: 11px;
-    padding: 5px 10px;
-  }
-
-  .button-code {
-    font-size: 11px;
-    padding: 5px 10px;
+  .button {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 
   .card-techs {
@@ -241,7 +248,7 @@
 
   .card-title {
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     color: #ffffff;
     margin-bottom: 4px;
   }
@@ -260,16 +267,9 @@
     font-size: 11px;
   }
 
-  .button-video {
-    font-size: 10px;
-    padding: 3px 5px;
-    box-shadow: 0px 1px #0c0c0c;
-  }
-
-  .button-code {
-    font-size: 10px;
-    padding: 3px 5px;
-    box-shadow: 0px 1px #0c0c0c;
+  .button {
+    font-size: 11px;
+    padding: 5px 10px;
   }
 
   .card-description {
@@ -293,26 +293,21 @@
     bottom: 16px;
     left: 75px;
     display: flex;
-    gap: 32px;
+    gap: 8px;
     opacity: 1;
   }
 
-  .button-video {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .button-code {
-    font-size: 13px;
-    padding: 6px 10px;
+  .button {
+    font-size: 11px;
+    padding: 6px 12px;
   }
 
   .card-techs {
     display: flex;
-    gap: 6px;
+    gap: 3px;
     // color: var(--color3, white);
     // padding-top: 6px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .card-description {
@@ -324,8 +319,7 @@
   }
 
   .card-title {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 15px;
     color: #ffffff;
     margin-bottom: 4px;
   }

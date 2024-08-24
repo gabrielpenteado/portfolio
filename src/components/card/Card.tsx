@@ -1,6 +1,9 @@
 import "./Card.scss";
 // import github from "../../assets/github-brands-solid.svg";
 // import play from "../../assets/play-solid.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 interface TechStackItem {
   name: string;
@@ -34,7 +37,7 @@ const Card: React.FC<CardProps> = ({
         return "angular-class";
       case techList.some((tech) => tech.name.includes("next")):
         return "next-class";
-      case techList.some((tech) => tech.name.includes("java")):
+      case techList.some((tech) => tech.name === "java"):
         return "java-class";
       case techList.some((tech) => tech.name.includes("node")):
         return "node-class";
@@ -60,17 +63,17 @@ const Card: React.FC<CardProps> = ({
       <div className="card-buttons">
         {codeLink && (
           <a href={codeLink} target="_blank">
-            <button className="button-code">
+            <button className="button codebtn">
               {/* <img className="github" src={github} alt="github" /> */}
-              Repository
+              <FontAwesomeIcon icon={faCode} />
             </button>
           </a>
         )}
         {videoLink && (
           <a href={videoLink} target="_blank">
-            <button className="button-video">
+            <button className="button">
               {/* <img className="video" src={play} alt="video" /> */}
-              Video
+              <FontAwesomeIcon icon={faPlay} />
             </button>
           </a>
         )}

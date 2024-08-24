@@ -1,41 +1,72 @@
 .contactsButton {
+  padding: 6px 11px;
+  border: none;
+  border-radius: 2px;
+  background: #424242;
+  fill: rgb(240, 240, 240);
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1) inset,
+    0 0 0 1px rgba(0, 0, 0, 0.7), 0 -1px 0 0 rgba(0, 0, 0, 0.7) inset,
+    0 1px 2px 1px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 50ms ease-out;
+  font-weight: 500;
   display: flex;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  background-color: rgb(56, 56, 56);
-  fill: #c4c4c4;
+  justify-content: center;
+  align-items: center;
 }
 
-.contactsButton:hover {
-  background-color: #242424;
-  fill: white;
-  cursor: pointer;
+.contactsButton:hover,
+.contactsButton:focus,
+.contactsButton:focus-visible {
+  background: #353535;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.05) inset,
+    0 0 0 1px rgba(0, 0, 0, 0.7), 0 -1px 0 0 rgba(0, 0, 0, 0.7) inset,
+    0 1px 2px 1px rgba(0, 0, 0, 0.6);
+  border: none;
+  outline: none;
+}
+
+.contactsButton:active {
+  background: #181818;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.05), 0 1px 2px 1px rgba(0, 0, 0, 0.6) inset;
 }
 
 .contacts {
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
   padding: 6px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .contactsButton {
-    display: flex;
-    padding: 0.3rem;
-  }
-
-  .contactsButton:hover {
-    background-color: #242424;
-    fill: white;
-    cursor: pointer;
+    padding: 5px 9px;
   }
 
   .contacts {
     display: flex;
     justify-content: center;
-    gap: 2px;
+    gap: 5px;
     padding: 4px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contactsButton {
+    padding: 4px 7px;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 4px;
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
   }
 }
 
@@ -43,12 +74,17 @@
   .contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2px;
+    gap: 8px;
     padding: 8px 4px;
   }
 
   .contactsButton {
     display: flex;
-    padding: 0.3rem;
+    padding: 0.4rem;
+  }
+
+  svg {
+    width: 1.1em;
+    height: 1.1em;
   }
 }

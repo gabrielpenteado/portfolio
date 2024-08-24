@@ -84,7 +84,7 @@ img {
   .profile {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 2px;
     //  margin-left: 20px;
     align-items: center;
     justify-content: center;
@@ -98,5 +98,9 @@ img {
 
   .career {
     display: none;
+  }
+
+  .me {
+    padding-top: 4px;
   }
 }
