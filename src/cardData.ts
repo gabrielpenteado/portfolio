@@ -45,7 +45,7 @@ export const cards: CardData[] = [
   {
     id: 3,
     image: "",
-    title: "React-Form",
+    title: "React Form",
     description:
       "A React form integrated with ChakraUI and Firebase realtime database.",
     techStack: [
@@ -75,7 +75,7 @@ export const cards: CardData[] = [
   {
     id: 5,
     image: "",
-    title: "API-Java-Spring-Docker",
+    title: "API Java Spring Docker",
     description:
       "RESTful API for CRUD operations; created with Java, SpringBoot and Docker.",
     techStack: [
@@ -142,7 +142,7 @@ export const cards: CardData[] = [
   {
     id: 10,
     image: "",
-    title: "API-Game-News",
+    title: "API Game News",
     description:
       "The API for game news project, with user authentication, CRUD of posts, comments and likes",
     techStack: [
@@ -156,7 +156,7 @@ export const cards: CardData[] = [
   {
     id: 11,
     image: "",
-    title: "Todo-Vue-TailwindCSS",
+    title: "Todo Vue TailwindCSS",
     description:
       "A simple todo-list app made with Vuex, Vuex and Json Web Server.",
     techStack: [
@@ -171,7 +171,7 @@ export const cards: CardData[] = [
   {
     id: 12,
     image: "",
-    title: "API-Java-Spring-Mongo",
+    title: "API Java Spring Mongo",
     description:
       "RESTful API for CRUD operations; created with Java, SpringBoot and MongoDB.",
     techStack: [
@@ -198,7 +198,7 @@ export const cards: CardData[] = [
   {
     id: 14,
     image: "",
-    title: "Docker-React-Nginx",
+    title: "Docker React Nginx",
     description:
       "A existing react project that was dockerized using Docker and Nginx",
     techStack: [{ name: "react" }, { name: "docker" }, { name: "nginx" }],
@@ -207,7 +207,7 @@ export const cards: CardData[] = [
   {
     id: 15,
     image: "",
-    title: "API-GraphQL-Prisma",
+    title: "API GraphQL Prisma",
     description: "A GraphQL API integrated Next.js and Prisma.",
     techStack: [{ name: "next" }, { name: "graphQL" }, { name: "prisma" }],
     codeLink: "https://github.com/gabrielpenteado/api-graphql-prisma",
@@ -246,7 +246,7 @@ export const cards: CardData[] = [
   {
     id: 19,
     image: "",
-    title: "API-Java-RabbitMQ-Docker",
+    title: "API Java RabbitMQ Docker",
     description: "An API to manage orders with RabbitMQ.",
     techStack: [
       { name: "java" },
@@ -260,7 +260,7 @@ export const cards: CardData[] = [
   {
     id: 20,
     image: "",
-    title: "API-Dotnet-EF-Csharp",
+    title: "API Dotnet EF Csharp",
     description:
       "REST API for CRUD operations; created with .NET, C# and Entity Framework.",
     techStack: [{ name: "csharp" }, { name: "eF" }, { name: "dotnet" }],
@@ -269,7 +269,7 @@ export const cards: CardData[] = [
   {
     id: 21,
     image: "",
-    title: "API-Node-MongoDB",
+    title: "API Node MongoDB",
     description:
       "RESTful API for CRUD operations; created with Node.JS and MongoDB.",
     techStack: [
@@ -291,7 +291,7 @@ export const cards: CardData[] = [
   {
     id: 23,
     image: "",
-    title: "API-Java-JWT-Spring",
+    title: "API Java JWT Spring",
     description: "A API created with JAVA and SpringBoot and auth with JWT.",
     techStack: [{ name: "java" }, { name: "jWT" }, { name: "springBoot" }],
     codeLink:
@@ -300,7 +300,7 @@ export const cards: CardData[] = [
   {
     id: 24,
     image: "",
-    title: "API-AdonisJS-Supabase",
+    title: "API AdonisJS Supabase",
     description:
       "RESTful API with JWT authentication; created with AdonisJS and Supabase database.",
     techStack: [
