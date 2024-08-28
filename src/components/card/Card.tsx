@@ -41,6 +41,8 @@ const Card: React.FC<CardProps> = ({
         return "java-class";
       case techList.some((tech) => tech.name.includes("node")):
         return "node-class";
+      case techList.some((tech) => tech.name.includes("csharp")):
+        return "csharp-class";
       default:
         return ""; // Classe padrão
     }

@@ -259,6 +259,8 @@ $time-4: 200s;
   .header {
     width: 15%;
     margin-left: 15px;
+    height: fit-content;
+    padding-bottom: 20px;
   }
 }
 
@@ -278,8 +280,9 @@ $time-4: 200s;
 
   .header {
     width: 20%;
+    height: fit-content;
     margin-left: 10px;
-    padding: 6px;
+    padding: 6px 6px 20px 6px;
   }
 }
 
@@ -300,7 +303,8 @@ $time-4: 200s;
   .header {
     width: 21%;
     margin-left: 10px;
-    padding: 6px;
+    padding: 6px 6px 20px 6px;
+    height: fit-content;
   }
 }
 
@@ -321,6 +325,7 @@ $time-4: 200s;
   .header {
     width: 23%;
     margin-left: 10px;
-    padding: 6px;
+    padding: 6px 6px 20px 6px;
+    height: fit-content;
   }
 }

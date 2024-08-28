@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <div className="radio-button-container">
       {techOptions.map((tech, index) => (
-        <div className={`radio-button ${tech}`}>
+        <div className={`radio-button ${tech}`} key={index}>
           <input
             className="radio-button__input"
             type="radio"

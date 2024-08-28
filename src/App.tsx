@@ -16,6 +16,7 @@ const techOptions: string[] = [
   "next",
   "java",
   "node",
+  "csharp",
 ];
 
 const App: React.FC = () => {
@@ -62,7 +63,7 @@ const App: React.FC = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.5, ease: "easeOut" }}
                 >
                   <Card
                     key={card.id}
