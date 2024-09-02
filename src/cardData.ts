@@ -311,5 +311,19 @@ export const cards: CardData[] = [
     ],
     codeLink: "https://github.com/gabrielpenteado/api-adonisjs-jwt",
   },
+  {
+    id: 25,
+    image: "",
+    title: "API NestJS Forum",
+    description:
+      "A REST API with authentication for an forum application; created with NestJS.",
+    techStack: [
+      { name: "NestJS" },
+      { name: "JWT" },
+      { name: "Prisma" },
+      { name: "SQLite" },
+    ],
+    codeLink: "https://github.com/gabrielpenteado/api-nest-forum",
+  },
   // Adicione mais cards aqui
 ];
