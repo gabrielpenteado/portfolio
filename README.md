@@ -3,8 +3,6 @@
 </h1>
 
 <div align="center">
-  <img src="https://img.shields.io/github/license/gabrielpenteado/portfolio?color=informational" alt="license"/>
-
   <img src="https://img.shields.io/static/v1?label=npm&message=v10.5.19&color=informational&style=flat-square" alt="npm version">
 
   <img src="https://img.shields.io/website?down_color=red&down_message=offline&style=flat-square&up_color=008000&up_message=online&url=https%3A%2F%2Fgabrielpenteado.github.io/portfolio" alt="website status">
@@ -77,10 +75,6 @@
 - [sass](https://sass-lang.com/)
 - [framer](https://www.framer.com/motion/)
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE.md](https://github.com/gabrielpenteado/portfolio/blob/main/LICENSE.md) file for details.
-<br>
 <br>
 
 <div align="center">
