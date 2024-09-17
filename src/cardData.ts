@@ -38,6 +38,7 @@ export const cards: CardData[] = [
       { name: "react" },
       { name: "typeScript" },
       { name: "tailwindCSS" },
+      { name: "node" },
     ],
     codeLink: "https://github.com/gabrielpenteado/dentalprocs",
     videoLink: "https://www.youtube.com/watch?v=0X3PRdZceBo",
