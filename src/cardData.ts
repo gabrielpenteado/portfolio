@@ -46,7 +46,7 @@ export const cards: CardData[] = [
   {
     id: 3,
     image: "",
-    title: "React Form",
+    title: "React Firebase Form",
     description:
       "A React form integrated with ChakraUI and Firebase realtime database.",
     techStack: [
@@ -55,7 +55,7 @@ export const cards: CardData[] = [
       { name: "firebase" },
       { name: "chakraUI" },
     ],
-    codeLink: "https://github.com/gabrielpenteado/react-form",
+    codeLink: "https://github.com/gabrielpenteado/react-firebase-form",
     videoLink: "https://www.youtube.com/watch?v=yN3159m4fnw",
   },
   {
