@@ -326,5 +326,39 @@ export const cards: CardData[] = [
     ],
     codeLink: "https://github.com/gabrielpenteado/api-nest-forum",
   },
+  {
+    id: 26,
+    image: "",
+    title: "Page Oh My Donuts",
+    description: "The landing page of the Oh My Donuts app.",
+    techStack: [{ name: "vue" }, { name: "sass" }, { name: "postgreSQL" }],
+    codeLink: "https://github.com/gabrielpenteado/page-ohmydonuts",
+  },
+  {
+    id: 27,
+    image: "",
+    title: "Page Dental Procs",
+    description: "The landing page of the Dental Procs app.",
+    techStack: [
+      { name: "react" },
+      { name: "typeScript" },
+      { name: "tailwindCSS" },
+    ],
+    codeLink: "https://github.com/gabrielpenteado/page-dentalprocs",
+  },
+  {
+    id: 28,
+    image: "",
+    title: "Cloudflare GitHub Action",
+    description:
+      "GitHub Action for Cloudflare Pages deployment with preview and production triggers.",
+    techStack: [
+      { name: "CI-CD" },
+      { name: "cloudflare" },
+      { name: "gitHub Actions" },
+    ],
+    codeLink:
+      "https://github.com/gabrielpenteado/action-deploy-cloudflare-with-preview-url",
+  },
   // Adicione mais cards aqui
 ];
