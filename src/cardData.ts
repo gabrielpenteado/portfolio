@@ -294,7 +294,7 @@ export const cards: CardData[] = [
     image: "",
     title: "API Java JWT Spring",
     description: "A API created with JAVA and SpringBoot and auth with JWT.",
-    techStack: [{ name: "java" }, { name: "jWT" }, { name: "springBoot" }],
+    techStack: [{ name: "java" }, { name: "jwt" }, { name: "springBoot" }],
     codeLink:
       "https://github.com/gabrielpenteado/api-java-jwt-springboot/tree/main/login-app-backend",
   },
@@ -319,12 +319,46 @@ export const cards: CardData[] = [
     description:
       "A REST API with authentication for an forum application; created with NestJS.",
     techStack: [
-      { name: "NestJS" },
-      { name: "JWT" },
-      { name: "Prisma" },
-      { name: "SQLite" },
+      { name: "nestJS" },
+      { name: "jwt" },
+      { name: "prisma" },
+      { name: "sQLite" },
     ],
     codeLink: "https://github.com/gabrielpenteado/api-nest-forum",
+  },
+  {
+    id: 26,
+    image: "",
+    title: "Page Oh My Donuts",
+    description: "The landing page of the Oh My Donuts app.",
+    techStack: [{ name: "vue" }, { name: "sass" }, { name: "postgreSQL" }],
+    codeLink: "https://github.com/gabrielpenteado/page-ohmydonuts",
+  },
+  {
+    id: 27,
+    image: "",
+    title: "Page Dental Procs",
+    description: "The landing page of the Dental Procs app.",
+    techStack: [
+      { name: "react" },
+      { name: "typeScript" },
+      { name: "tailwindCSS" },
+    ],
+    codeLink: "https://github.com/gabrielpenteado/page-dentalprocs",
+  },
+  {
+    id: 28,
+    image: "",
+    title: "Cloudflare GitHub Action",
+    description:
+      "GitHub Action for Cloudflare Pages deployment with preview and production triggers.",
+    techStack: [
+      { name: "CI-CD" },
+      { name: "cloudflare" },
+      { name: "gitHub Actions" },
+    ],
+    codeLink:
+      "https://github.com/gabrielpenteado/action-deploy-cloudflare-with-preview-url",
   },
   // Adicione mais cards aqui
 ];
